@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "active": true,
+  "skill": "autopilot",
+  "keyword": "autopilot",
+  "phase": "planning",
+  "activated_at": "2026-04-13T04:46:56.322Z",
+  "updated_at": "2026-04-13T04:46:56.322Z",
+  "source": "keyword-detector",
+  "session_id": "",
+  "thread_id": "019d8510-0b22-7543-a7ee-8ddc413b6af6",
+  "turn_id": "019d851f-cca7-7a31-864a-1d515e2ec8e2",
+  "iteration": 8,
+  "last_turn_at": "2026-04-13T05:35:40.005Z"
+}
