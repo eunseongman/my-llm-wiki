@@ -1,6 +1,6 @@
 {
-  "last_turn_at": "2026-04-13T05:35:40.047Z",
-  "turn_count": 14,
-  "last_progress_at": "2026-04-13T05:35:40.047Z",
-  "last_agent_output": "넣어뒀습니다. README 초반에 “Karpathy 글에서 아이디어를 얻었고, LLM과의 대화 속 학습이 유실되는 게 아까워서 나만의 wiki처럼 관리하고 싶었다”는 문제의식을 자"
+  "last_turn_at": "2026-04-14T00:03:56.826Z",
+  "turn_count": 29,
+  "last_progress_at": "2026-04-14T00:03:56.826Z",
+  "last_agent_output": "`정리해줘`를 채팅 요약으로 처리하면 지침 위반이라고 명시해뒀고, 이제 최소 산출물을 `report + session + log`로 고정했습니다. 또 문서 반영이 끝나기 전에는 저"
 }
