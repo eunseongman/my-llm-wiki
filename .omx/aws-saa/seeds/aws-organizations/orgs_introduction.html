@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>What is AWS Organizations? - AWS Organizations</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="orgs_introduction" /><meta name="default_state" content="orgs_introduction" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html" /><meta name="description" content="Learn how AWS Organizations helps you to manage multiple AWS accounts." /><meta name="deployment_region" content="IAD" /><meta name="product" content="AWS Organizations" /><meta name="guide" content="User Guide" /><meta name="abstract" content="Combine all of your AWS accounts into an organization to consolidate billing and to achieve new levels of control over your AWS accounts." /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/organizations/latest/userguide/orgs_introduction.html" hreflang="id-id" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/organizations/latest/userguide/orgs_introduction.html" hreflang="id" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/organizations/latest/userguide/orgs_introduction.html" hreflang="de-de" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/organizations/latest/userguide/orgs_introduction.html" hreflang="de" /><link rel="alternate" href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html" hreflang="en-us" /><link rel="alternate" href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html" hreflang="en" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/organizations/latest/userguide/orgs_introduction.html" hreflang="es-es" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/organizations/latest/userguide/orgs_introduction.html" hreflang="es" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/organizations/latest/userguide/orgs_introduction.html" hreflang="fr-fr" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/organizations/latest/userguide/orgs_introduction.html" hreflang="fr" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/organizations/latest/userguide/orgs_introduction.html" hreflang="it-it" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/organizations/latest/userguide/orgs_introduction.html" hreflang="it" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/organizations/latest/userguide/orgs_introduction.html" hreflang="ja-jp" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/organizations/latest/userguide/orgs_introduction.html" hreflang="ja" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/organizations/latest/userguide/orgs_introduction.html" hreflang="ko-kr" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/organizations/latest/userguide/orgs_introduction.html" hreflang="ko" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/organizations/latest/userguide/orgs_introduction.html" hreflang="pt-br" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/organizations/latest/userguide/orgs_introduction.html" hreflang="pt" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_cn/organizations/latest/userguide/orgs_introduction.html" hreflang="zh-cn" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_tw/organizations/latest/userguide/orgs_introduction.html" hreflang="zh-tw" /><link rel="alternate" href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html" hreflang="x-default" /><meta name="feedback-item" content="Organizations" /><meta name="this_doc_product" content="AWS Organizations" /><meta name="this_doc_guide" content="User Guide" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'organizations'}"></script><meta id="panorama-serviceSubSection" value="User Guide" /><meta id="panorama-serviceConsolePage" value="What is AWS Organizations?" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><p><a href="orgs_introduction.md">View a markdown version of this page</a></p><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>What is AWS Organizations? - AWS Organizations</title><meta name="pdf" content="/pdfs/organizations/latest/userguide/organizations-userguide.pdf#orgs_introduction" /><meta name="rss" content="aws-organizations-release-notes.rss" /><meta name="forums" content="https://repost.aws/tags/TA6BEgyePwRAKiMatMcHghcA" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=Organizations&amp;topic_url=https://docs.aws.amazon.com/en_us/organizations/latest/userguide/orgs_introduction.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/organizations/latest/userguide/orgs_introduction.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/organizations/latest/userguide/orgs_introduction.html" /><meta name="keywords" content="organization,management account,member account,consolidated billing,consolidated billing family,organizational unit,OU,root,service control policy,policy,AI services opt-out policy,backup policy,tag policy" /><link rel="alternate" type="text/markdown" href="orgs_introduction.md" title="Markdown version" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "AWS Organizations",
+        "item" : "https://docs.aws.amazon.com/organizations/index.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "User Guide",
+        "item" : "https://docs.aws.amazon.com/organizations/latest/userguide"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "What is AWS Organizations?",
+        "item" : "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/organizations/latest/userguide/organizations-userguide.pdf#orgs_introduction" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="/organizations/index.html">AWS Organizations</a><a href="orgs_introduction.html">User Guide</a></div><div id="page-toc-src"><a href="#features">Features</a><a href="#use-cases">Use cases</a></div><awsdocs-doc-page-banner></awsdocs-doc-page-banner><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><h1 class="topictitle" id="orgs_introduction">What is AWS Organizations?</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div><p><b>Centrally manage your environment as you scale your AWS resources</b></p><p>AWS Organizations helps you centrally manage and govern your environment as you grow and scale
+        your AWS resources. Using Organizations, you can create accounts and allocate resources,
+        group accounts to organize your workflows, apply policies for governance,
+        and simplify billing by using a single payment method for all of your accounts.</p><p>Organizations is integrated with other AWS services so you can define central configurations,
+        security mechanisms, audit requirements, and resource sharing across accounts in your organization.
+        For more information, see <a href="./orgs_integrate_services.html">Using AWS Organizations with other AWS services</a>.</p><p>The following diagram shows a high-level explanation of how you can use AWS Organizations:</p><div class="itemizedlist">
+         
+         
+         
+         
+    <ul class="itemizedlist"><li class="listitem"><p>Add accounts</p></li><li class="listitem"><p>Group accounts</p></li><li class="listitem"><p>Apply policies</p></li><li class="listitem"><p>Enable AWS services</p></li></ul></div><div class="mediaobject">
+         
+            <img src="/images/organizations/latest/userguide/images/organizations-how-it-works.png" class="aws-docs-img-whiteBg aws-docs-img-padding" alt="This image displays how AWS Organizations works: add accounts, group accounts, apply policies, and enable AWS services." style="max-width:75%" />
+         
+         
+    </div><div class="highlights"><h6>Topics</h6><ul><li><p><a href="#features">Features</a></p></li><li><p><a href="#use-cases">Use cases</a></p></li><li><p><a href="./orgs_getting-started_concepts.html">Terminology and concepts</a></p></li><li><p><a href="./orgs_reference_limits.html">Quotas and service limits</a></p></li><li><p><a href="./region-support.html">Region support</a></p></li><li><p><a href="./pricing.html">Billing and pricing</a></p></li><li><p><a href="./support-and-feedback.html">Support and feedback</a></p></li></ul></div>
+        <h2 id="features">Features for AWS Organizations</h2>
+        <p>AWS Organizations offers the following features:</p>
+        <div class="variablelist">
+             
+             
+             
+             
+             
+             
+             
+        <dl>
+                <dt><span class="term"><b>Manage your AWS accounts</b></span></dt>
+                <dd>
+                    <p>AWS accounts are natural boundaries for permission, security, costs, and workloads.
+                        Using a multi-account environment is a recommended best-practice when scaling your cloud environment.
+                        You can simplify account creation by programmatically creating new accounts
+                        using the AWS Command Line Interface (AWS CLI), SDKs, or APIs,
+                        and centrally provision recommended resources and permissions to those accounts
+                        with <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html">AWS CloudFormation StackSets</a>.</p>
+                </dd>
+             
+                <dt><span class="term"><b>Define and manage your organization</b></span></dt>
+                <dd>
+                    <p>As you create new accounts, you can group them into organizational units (OUs),
+                        or groups of accounts that serve a single application or service.
+                        Apply tag polices to classify or track resources in your organization,
+                        and provide attribute-based access control for users or applications.
+                        In addition, you can delegate responsibility for supported AWS services to accounts
+                        so users can manage them on behalf of your organization.</p>
+                </dd>
+             
+                <dt><span class="term"><b>Secure and monitor your accounts</b></span></dt>
+                <dd>
+                    <p>You can centrally provide tools and access for your security team to manage security needs on behalf of the organization.
+                        For example, you can provide read-only security access across accounts, detect and mitigate threats with
+                        <a href="https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html">Amazon GuardDuty</a>,
+                        review unintended access to resources with
+                        <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html">IAM Access Analyzer</a>,
+                        and secure sensitive data with <a href="https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html">Amazon Macie</a>.</p>
+                </dd>
+             
+                <dt><span class="term"><b>Control access and permissions</b></span></dt>
+                <dd>
+                    <p>Set up <a href="https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html">AWS IAM Identity Center</a> to provide access to AWS accounts
+                        and resources using your active directory, and customize permissions
+                        based on separate job roles. You can also apply <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies.html">organization policies</a> to users, accounts, or OUs. For example,
+                        <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html">service control policies (SCPs)</a> enable you to
+                        to control access to AWS resources, services, and Regions within your organization.
+                        <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html">Resource control policies (RCPs)</a> enable you to
+                        centrally prevent the unintended use of your AWS resources.
+                        <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_chatbot.html">Chat applications policies</a> enable you to control access to your organization's accounts from chat applications such as Slack and Microsoft Teams.</p>
+                </dd>
+             
+                <dt><span class="term"><b>Share resources across accounts</b></span></dt>
+                <dd>
+                    <p>You can share AWS resources within your organization using
+                        <a href="https://docs.aws.amazon.com/ram/latest/userguide/what-is.html">AWS Resource Access Manager (AWS RAM)</a>.
+                        For example, you can create your
+                        <a href="https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html">Amazon Virtual Private Cloud (Amazon VPC)</a> subnets once and share them across your organization.
+                        You can also centrally agree to software licenses with
+                        <a href="https://docs.aws.amazon.com/license-manager/latest/userguide/license-manager.html">AWS License Manager</a>,
+                        and share a catalog of IT services and custom products across accounts with
+                        <a href="https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html">AWS Service Catalog</a>.</p>
+                </dd>
+             
+                <dt><span class="term"><b>Audit your environment for compliance</b></span></dt>
+                <dd>
+                    <p>You can activate
+                        <a href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html">AWS CloudTrail</a> across accounts, which creates a log of all activity in your cloud environment
+                        that cannot be turned off or modified by member accounts. In addition, you can set policies to enforce
+                        backups on your specified cadence with
+                        <a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html">AWS Backup</a>, or define recommended configuration settings
+                        for resources across accounts and AWS Regions with
+                        <a href="https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html">AWS Config</a>.</p>
+                </dd>
+             
+                <dt><span class="term"><b>Centrally manage billing and costs</b></span></dt>
+                <dd>
+                    <p>Organizations provides you with a single consolidated bill.
+                        In addition, you can view usage from resources across accounts and track costs using
+                        <a href="https://docs.aws.amazon.com/cost-management/latest/userguide/ce-reports.html">AWS Cost Explorer</a>,
+                        and optimize your usage of compute resources using
+                        <a href="https://docs.aws.amazon.com/managedservices/latest/userguide/compute-optimizer.html">AWS Compute Optimizer</a>.</p>
+                </dd>
+            </dl></div>
+     
+        <h2 id="use-cases">Use cases for AWS Organizations</h2>
+        <p>The following are some use cases for AWS Organizations:</p>
+        <div class="variablelist">
+             
+             
+             
+             
+             
+        <dl>
+                <dt><span class="term"><b>Automate the creation of AWS accounts and categorize workloads</b></span></dt>
+                <dd>
+                    <p>You can automate the creation of AWS accounts to quickly launch new workloads.
+                        Add the accounts to user-defined groups for instant security policy application,
+                        touchless infrastructure deployments, and auditing.
+                        Create separate groups to categorize development and production accounts
+                        and use <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html">AWS CloudFormation StackSets</a> to provision services and permissions to each group.</p>
+                </dd>
+             
+                <dt><span class="term"><b>Define and enforce audit and compliance policies</b></span></dt>
+                <dd>
+                    <p>You can apply service control policies (SCPs) to ensure that your users perform only
+                        the actions that meet your security and compliance requirements.
+                        Create a central log of all actions performed across your organization using <a href="https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html">AWS CloudTrail</a>.
+                        View and enforce standard resource configurations across accounts and AWS Regions using <a href="https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html">AWS Config</a>.
+                        Automatically apply regular backups using <a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html">AWS Backup</a>.
+                        Use <a href="https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html">AWS Control Tower</a> to apply pre-packaged governance rules for security,
+                        operations, and compliance for your AWS workloads.</p>
+                </dd>
+             
+                <dt><span class="term"><b>Provide tools and access for your Security teams while encouraging development</b></span></dt>
+                <dd>
+                    <p>Create a Security group and provide it
+                        with read-only access to all of your
+                        resources to identify and mitigate security concerns.
+                        You can allow that group to manage <a href="https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html">Amazon GuardDuty</a> so they can actively monitor
+                        and mitigate threats to your workloads, and <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html">IAM Access Analyzer</a> to quickly identify unintended access to your resources.</p>
+                </dd>
+             
+                <dt><span class="term"><b>Share common resources across accounts</b></span></dt>
+                <dd>
+                    <p>Organizations makes it easy for you to share critical central resources across your accounts.
+                        For example, you can share your central
+                        <a href="https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">AWS Directory Service for Microsoft Active Directory</a> so that applications can access your central identity store.</p>
+                </dd>
+             
+                <dt><span class="term"><b>Share critical central resources across your accounts</b></span></dt>
+                <dd>
+                    <p>Share your
+                        <a href="https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">AWS Directory Service for Microsoft Active Directory</a> as a central identity store for your applications.
+                        Use <a href="https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html">AWS Service Catalog</a> to share IT services in designated accounts so users can quickly
+                        discover and deploy approved services.
+                        Ensure that application resources are created
+                        on your <a href="https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html">Amazon Virtual Private Cloud (Amazon VPC)</a> subnets
+                        by centrally defining them once and sharing them across your organization using <a href="https://docs.aws.amazon.com/ram/latest/userguide/what-is.html">AWS Resource Access Manager (AWS RAM)</a>.</p>
+                </dd>
+            </dl></div>
+    <awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="next" class="next-link" accesskey="n" href="./orgs_getting-started_concepts.html">Terminology and concepts</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=Organizations&amp;topic_url=https://docs.aws.amazon.com/en_us/organizations/latest/userguide/orgs_introduction.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=Organizations&amp;topic_url=https://docs.aws.amazon.com/en_us/organizations/latest/userguide/orgs_introduction.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>

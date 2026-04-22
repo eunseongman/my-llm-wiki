@@ -1,0 +1,205 @@
+﻿[
+    {
+        "service":  "amazon-ec2",
+        "sitemap":  "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sitemap.xml",
+        "urlCount":  715,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "amazon-s3",
+        "sitemap":  "https://docs.aws.amazon.com/AmazonS3/latest/userguide/sitemap.xml",
+        "urlCount":  785,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "amazon-rds",
+        "sitemap":  "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sitemap.xml",
+        "urlCount":  1367,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "amazon-aurora",
+        "sitemap":  "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/sitemap.xml",
+        "urlCount":  972,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "amazon-dynamodb",
+        "sitemap":  "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/sitemap.xml",
+        "urlCount":  644,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "aws-lambda",
+        "sitemap":  "https://docs.aws.amazon.com/lambda/latest/dg/sitemap.xml",
+        "urlCount":  453,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "amazon-vpc",
+        "sitemap":  "https://docs.aws.amazon.com/vpc/latest/userguide/sitemap.xml",
+        "urlCount":  201,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "transit-gateway",
+        "sitemap":  "https://docs.aws.amazon.com/vpc/latest/tgw/sitemap.xml",
+        "urlCount":  130,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "amazon-route53",
+        "sitemap":  "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/sitemap.xml",
+        "urlCount":  740,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "amazon-cloudfront",
+        "sitemap":  "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/sitemap.xml",
+        "urlCount":  317,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "elastic-load-balancing-app",
+        "sitemap":  "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sitemap.xml",
+        "urlCount":  68,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "elastic-load-balancing-net",
+        "sitemap":  "https://docs.aws.amazon.com/elasticloadbalancing/latest/network/sitemap.xml",
+        "urlCount":  47,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "amazon-ecs",
+        "sitemap":  "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/sitemap.xml",
+        "urlCount":  554,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "amazon-eks",
+        "sitemap":  "https://docs.aws.amazon.com/eks/latest/userguide/sitemap.xml",
+        "urlCount":  450,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "amazon-sqs",
+        "sitemap":  "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sitemap.xml",
+        "urlCount":  195,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "amazon-sns",
+        "sitemap":  "https://docs.aws.amazon.com/sns/latest/dg/sitemap.xml",
+        "urlCount":  276,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "amazon-api-gateway",
+        "sitemap":  "https://docs.aws.amazon.com/apigateway/latest/developerguide/sitemap.xml",
+        "urlCount":  408,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "aws-cloudformation",
+        "sitemap":  "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/sitemap.xml",
+        "urlCount":  227,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "amazon-cloudwatch",
+        "sitemap":  "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/sitemap.xml",
+        "urlCount":  898,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "aws-cloudtrail",
+        "sitemap":  "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/sitemap.xml",
+        "urlCount":  194,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "aws-kms",
+        "sitemap":  "https://docs.aws.amazon.com/kms/latest/developerguide/sitemap.xml",
+        "urlCount":  277,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "aws-secrets-manager",
+        "sitemap":  "https://docs.aws.amazon.com/secretsmanager/latest/userguide/sitemap.xml",
+        "urlCount":  198,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "aws-organizations",
+        "sitemap":  "https://docs.aws.amazon.com/organizations/latest/userguide/sitemap.xml",
+        "urlCount":  246,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "aws-config",
+        "sitemap":  "https://docs.aws.amazon.com/config/latest/developerguide/sitemap.xml",
+        "urlCount":  1084,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "aws-guardduty",
+        "sitemap":  "https://docs.aws.amazon.com/guardduty/latest/ug/sitemap.xml",
+        "urlCount":  232,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "aws-waf",
+        "sitemap":  "https://docs.aws.amazon.com/waf/latest/developerguide/sitemap.xml",
+        "urlCount":  525,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "aws-systems-manager",
+        "sitemap":  "https://docs.aws.amazon.com/systems-manager/latest/userguide/sitemap.xml",
+        "urlCount":  786,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "aws-backup",
+        "sitemap":  "https://docs.aws.amazon.com/aws-backup/latest/devguide/sitemap.xml",
+        "urlCount":  399,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    },
+    {
+        "service":  "aws-direct-connect",
+        "sitemap":  "https://docs.aws.amazon.com/directconnect/latest/UserGuide/sitemap.xml",
+        "urlCount":  108,
+        "downloadedAll":  false,
+        "maxPagesPerService":  0
+    }
+]

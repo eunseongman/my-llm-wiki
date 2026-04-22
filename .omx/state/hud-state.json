@@ -1,6 +1,6 @@
 {
-  "last_turn_at": "2026-04-15T00:12:07.890Z",
-  "turn_count": 41,
-  "last_progress_at": "2026-04-15T00:12:07.890Z",
-  "last_agent_output": "Airflow는 데이터 파이프라인이나 배치 작업을 `코드로 정의하고`, `스케줄링하고`, `실행 상태를 관리하는` 워크플로 오케스트레이션 도구예요.\n\n쉽게 말하면:\n\n- 여러 작업"
+  "last_turn_at": "2026-04-22T23:51:35.177Z",
+  "turn_count": 121,
+  "last_progress_at": "2026-04-22T23:51:35.177Z",
+  "last_agent_output": "{\"suggestions\":[{\"title\":\"Reflect the AWS SAA pivot into the wiki\",\"description\":\"The Apr 17 RAG-piv"
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>AWS Key Management Service - AWS Key Management Service</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="overview" /><meta name="default_state" content="overview" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/kms/latest/developerguide/overview.html" /><meta name="description" content="AWS Key Management Service (AWS KMS) is a web service that securely protects cryptographic keys and allows other AWS services and custom applications to perform encryption and decryption and signing and verification." /><meta name="deployment_region" content="IAD" /><meta name="product" content="AWS Key Management Service" /><meta name="guide" content="Developer Guide" /><meta name="abstract" content="Learn how to use AWS Key Management Service (AWS KMS) to securely store and manage encryption keys and perform encryption and decryption of user data." /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/kms/latest/developerguide/overview.html" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/kms/latest/developerguide/overview.html" hreflang="id-id" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/kms/latest/developerguide/overview.html" hreflang="id" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/kms/latest/developerguide/overview.html" hreflang="de-de" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/kms/latest/developerguide/overview.html" hreflang="de" /><link rel="alternate" href="https://docs.aws.amazon.com/kms/latest/developerguide/overview.html" hreflang="en-us" /><link rel="alternate" href="https://docs.aws.amazon.com/kms/latest/developerguide/overview.html" hreflang="en" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/kms/latest/developerguide/overview.html" hreflang="es-es" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/kms/latest/developerguide/overview.html" hreflang="es" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/kms/latest/developerguide/overview.html" hreflang="fr-fr" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/kms/latest/developerguide/overview.html" hreflang="fr" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/kms/latest/developerguide/overview.html" hreflang="it-it" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/kms/latest/developerguide/overview.html" hreflang="it" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/kms/latest/developerguide/overview.html" hreflang="ja-jp" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/kms/latest/developerguide/overview.html" hreflang="ja" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/kms/latest/developerguide/overview.html" hreflang="ko-kr" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/kms/latest/developerguide/overview.html" hreflang="ko" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/overview.html" hreflang="pt-br" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/kms/latest/developerguide/overview.html" hreflang="pt" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_cn/kms/latest/developerguide/overview.html" hreflang="zh-cn" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_tw/kms/latest/developerguide/overview.html" hreflang="zh-tw" /><link rel="alternate" href="https://docs.aws.amazon.com/kms/latest/developerguide/overview.html" hreflang="x-default" /><meta name="feedback-item" content="Key Management Service (KMS)" /><meta name="this_doc_product" content="AWS Key Management Service" /><meta name="this_doc_guide" content="Developer Guide" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'kms'}"></script><meta id="panorama-serviceSubSection" value="Developer Guide" /><meta id="panorama-serviceConsolePage" value="AWS Key Management Service" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><p><a href="overview.md">View a markdown version of this page</a></p><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>AWS Key Management Service - AWS Key Management Service</title><meta name="pdf" content="/pdfs/kms/latest/developerguide/kms-dg.pdf#overview" /><meta name="rss" content="aws-kms-document-history.rss" /><meta name="forums" content="https://repost.aws/tags/TAMC3vcPOPTF-rPAHZVRj1PQ" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=Key%20Management%20Service%20%28KMS%29&amp;topic_url=https://docs.aws.amazon.com/en_us/kms/latest/developerguide/overview.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/kms/latest/developerguide/overview.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/kms/latest/developerguide/overview.html" /><meta name="keywords" content="KMS,key management service,encryption key management,encryption key,,envelope encryption,AWS Key Management Service overview" /><link rel="alternate" type="text/markdown" href="overview.md" title="Markdown version" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "AWS KMS",
+        "item" : "https://docs.aws.amazon.com/kms/index.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "Developer Guide",
+        "item" : "https://docs.aws.amazon.com/kms/latest/developerguide"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "AWS Key Management Service",
+        "item" : "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/kms/latest/developerguide/kms-dg.pdf#overview" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="/kms/index.html">AWS KMS</a><a href="overview.html">Developer Guide</a></div><div id="page-toc-src"><a href="#service-kms-why">Why use AWS KMS?</a><a href="#kms_regions">AWS KMS in AWS Regions</a><a href="#pricing">AWS KMS pricing</a><a href="#kms_service_levels">AWS KMS service level agreement</a></div><awsdocs-doc-page-banner></awsdocs-doc-page-banner><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><h1 class="topictitle" id="overview">AWS Key Management Service</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div><p>AWS Key Management Service (AWS KMS) is an AWS managed service that makes it easy for you to create and
+    control the keys used to encrypt and sign your data. The AWS KMS keys that you
+    create in AWS KMS are protected by <a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4884" rel="noopener noreferrer" target="_blank"><span>FIPS 140-3 Security Level 3
+      validated hardware security modules (HSM)</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>. They never leave AWS KMS unencrypted. To use
+    or manage your KMS keys, you interact with AWS KMS.</p>
+    <h2 id="service-kms-why">Why use AWS KMS?</h2>
+    <p>When you encrypt data, you need to protect your encryption key. If you encrypt your key,
+      you need to protect its encryption key. Eventually, you must protect the highest level
+      encryption key (known as a <em>root key</em>) in the hierarchy that
+      protects your data. That's where AWS KMS comes in.</p>
+
+    <div class="mediaobject">
+       
+        <img src="/images/kms/latest/developerguide/images/key-hierarchy-root.png" class="aws-docs-img-whiteBg aws-docs-img-padding" alt="Root key protect the data keys that protect your data" />
+       
+       
+    </div>
+    <p>AWS KMS protects your root keys. KMS keys are created, managed, used, and deleted
+      entirely within AWS KMS. They never leave the service unencrypted. To use or manage your
+      KMS keys, you call AWS KMS.</p>
+    <div class="mediaobject">
+       
+        <img src="/images/kms/latest/developerguide/images/key-hierarchy-kms-key.png" class="aws-docs-img-whiteBg aws-docs-img-padding" alt="AWS KMS protects your root keys" />
+       
+       
+    </div>
+
+    <p>Additionally, you can create and manage <a href="https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html">key
+        policies</a> in AWS KMS, ensuring that only trusted users have access to
+      KMS keys.</p>
+
+   
+    <h2 id="kms_regions">AWS KMS in AWS Regions</h2>
+    <p>The AWS Regions in which AWS KMS is supported are listed in <a href="https://docs.aws.amazon.com/general/latest/gr/kms.html">AWS Key Management Service Endpoints and Quotas</a>. If an
+      AWS KMS feature is not supported in an AWS Region that AWS KMS supports, the regional difference
+      is described in the topic about the feature. </p>
+   
+    <h2 id="pricing">AWS KMS pricing</h2>
+    <p>As with other AWS products, using AWS KMS does not require contracts or minimum purchases.
+      For more information about AWS KMS pricing, see <a href="https://aws.amazon.com/kms/pricing/" rel="noopener noreferrer" target="_blank"><span>AWS Key Management Service
+        Pricing</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.</p>
+   
+    <h2 id="kms_service_levels">AWS KMS service level agreement</h2>
+    <p>AWS Key Management Service is backed by a <a href="https://aws.amazon.com/kms/sla/" rel="noopener noreferrer" target="_blank"><span>service level
+        agreement</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a> that defines our service availability policy.</p>
+  <awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="next" class="next-link" accesskey="n" href="./accessing-kms.html">Accessing AWS Key Management Service</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=Key Management Service (KMS)&amp;topic_url=https://docs.aws.amazon.com/en_us/kms/latest/developerguide/overview.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=Key Management Service (KMS)&amp;topic_url=https://docs.aws.amazon.com/en_us/kms/latest/developerguide/overview.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>

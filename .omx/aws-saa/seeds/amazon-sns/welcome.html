@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>What is Amazon SNS? - Amazon Simple Notification Service</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="welcome" /><meta name="default_state" content="welcome" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/sns/latest/dg/welcome.html" /><meta name="description" content="This topic provides an introduction to Amazon SNS and how it facilitates asynchronous message delivery between publishers and subscribers through topics. Learn about the different endpoint types supported for message distribution, key features and integrations, common use cases, and pricing details for using Amazon SNS." /><meta name="deployment_region" content="IAD" /><meta name="product" content="Amazon Simple Notification Service" /><meta name="guide" content="Developer Guide" /><meta name="abstract" content="Coordinate and manage the delivery or sending of messages to subscribing endpoints or clients using Amazon SNS." /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/sns/latest/dg/welcome.html" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/sns/latest/dg/welcome.html" hreflang="id-id" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/sns/latest/dg/welcome.html" hreflang="id" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/sns/latest/dg/welcome.html" hreflang="de-de" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/sns/latest/dg/welcome.html" hreflang="de" /><link rel="alternate" href="https://docs.aws.amazon.com/sns/latest/dg/welcome.html" hreflang="en-us" /><link rel="alternate" href="https://docs.aws.amazon.com/sns/latest/dg/welcome.html" hreflang="en" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/sns/latest/dg/welcome.html" hreflang="es-es" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/sns/latest/dg/welcome.html" hreflang="es" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/sns/latest/dg/welcome.html" hreflang="fr-fr" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/sns/latest/dg/welcome.html" hreflang="fr" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/sns/latest/dg/welcome.html" hreflang="it-it" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/sns/latest/dg/welcome.html" hreflang="it" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/sns/latest/dg/welcome.html" hreflang="ja-jp" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/sns/latest/dg/welcome.html" hreflang="ja" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/sns/latest/dg/welcome.html" hreflang="ko-kr" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/sns/latest/dg/welcome.html" hreflang="ko" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/sns/latest/dg/welcome.html" hreflang="pt-br" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/sns/latest/dg/welcome.html" hreflang="pt" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_cn/sns/latest/dg/welcome.html" hreflang="zh-cn" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_tw/sns/latest/dg/welcome.html" hreflang="zh-tw" /><link rel="alternate" href="https://docs.aws.amazon.com/sns/latest/dg/welcome.html" hreflang="x-default" /><meta name="feedback-item" content="SNS" /><meta name="this_doc_product" content="Amazon Simple Notification Service" /><meta name="this_doc_guide" content="Developer Guide" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'sns'}"></script><meta id="panorama-serviceSubSection" value="Developer Guide" /><meta id="panorama-serviceConsolePage" value="What is Amazon SNS?" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><p><a href="welcome.md">View a markdown version of this page</a></p><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>What is Amazon SNS? - Amazon Simple Notification Service</title><meta name="pdf" content="/pdfs/sns/latest/dg/sns-dg.pdf#welcome" /><meta name="rss" content="recent-updates.rss" /><meta name="forums" content="https://repost.aws/tags/TAyateCXj5QMiBTHtJZlF3Gw" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=SNS&amp;topic_url=https://docs.aws.amazon.com/en_us/sns/latest/dg/welcome.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/sns/latest/dg/welcome.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/sns/latest/dg/welcome.html" /><meta name="keywords" content="Amazon SNS,Managed messaging service,Asynchronous messaging,Application integration,AWS messaging,Placeholder,Amazon SNS console,AWS CLI,Amazon SNS SDK,Manage Amazon SNS topics,Amazon SNS automation,Amazon SNS scenarios,Fanout messaging,Application alerts,Mobile push notifications,User notifications,Amazon SNS fanout,Parallel processing,Event-driven architecture,Amazon SNS application integration,Real-time notifications,CloudWatch alerts,Amazon SNS SMS notifications,Amazon EC2 auto scaling alerts,Amazon SNS SMS messaging,Push email notifications,e-commerce notifications,Customer communication,Amazon SNS app notifications,Real-time app updates,User engagement,Mobile app messaging,Amazon SNS pricing,Pay-as-you-go messaging,Amazon SNS free tier,Amazon SNS delivery costs,Manage Amazon SNS costs" /><link rel="alternate" type="text/markdown" href="welcome.md" title="Markdown version" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "Amazon Simple Notification Service",
+        "item" : "https://docs.aws.amazon.com/sns/index.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "Developer Guide",
+        "item" : "https://docs.aws.amazon.com/sns/latest/dg"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "What is Amazon SNS?",
+        "item" : "https://docs.aws.amazon.com/sns/latest/dg/welcome.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/sns/latest/dg/sns-dg.pdf#welcome" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="/sns/index.html">Amazon Simple Notification Service</a><a href="welcome.html">Developer Guide</a></div><div id="page-toc-src"><a href="#how-it-works">How it works</a><a href="#welcome-accessing">Accessing Amazon SNS</a><a href="#sns-common-scenarios">Common Amazon SNS scenarios</a><a href="#welcome-pricing">Pricing for Amazon SNS</a></div><awsdocs-doc-page-banner></awsdocs-doc-page-banner><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><h1 class="topictitle" id="welcome">What is Amazon SNS?</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div><p>Amazon Simple Notification Service (Amazon SNS) is a fully managed service that provides message delivery from
+        publishers (producers) to subscribers (consumers). Publishers communicate asynchronously
+        with subscribers by sending messages to a <em>topic</em>, which is
+        a logical access point and communication channel.</p>
+        <h2 id="how-it-works">How it works</h2>
+        <p>In SNS, publishers send messages to a topic, which acts as a communication channel.
+            The topic acts as a logical access point, ensuring messages are delivered to multiple
+            subscribers across different platforms.</p>
+        <p>Subscribers to an SNS topic can receive messages through different endpoints,
+            depending on their use case, such as:</p>
+        <div class="itemizedlist">
+             
+             
+             
+             
+             
+             
+             
+             
+        <ul class="itemizedlist"><li class="listitem">
+                <p>Amazon SQS</p>
+            </li><li class="listitem">
+                <p>Lambda</p>
+            </li><li class="listitem">
+                <p>HTTP(S) endpoints</p>
+            </li><li class="listitem">
+                <p>Email</p>
+            </li><li class="listitem">
+                <p>Mobile push notifications</p>
+            </li><li class="listitem">
+                <p>Mobile text messages (SMS)</p>
+            </li><li class="listitem">
+                <p>Amazon Data Firehose</p>
+            </li><li class="listitem">
+                <p>Service providers (For example, Datadog, MongoDB, Splunk)</p>
+            </li></ul></div>
+        <p>SNS supports both Application-to-Application (A2A) and Application-to-Person (A2P)
+            messaging, giving flexibility to send messages between different applications or
+            directly to mobile phones, email addresses, and more.</p>
+        <div class="mediaobject">
+             
+                <img src="/images/sns/latest/dg/images/sns-delivery-protocols.png" class="aws-docs-img-whiteBg aws-docs-img-padding" alt="Amazon SNS delivers messages from publishers to subscribers across both application-to-application (A2A) and application-to-person (A2P) endpoints. It shows A2A endpoints like Lambda functions, Amazon SQS queues, HTTP/S endpoints, and Data Firehose, along with A2P endpoints including SMS, mobile push notifications, and email, highlighting the flexibility of Amazon SNS for asynchronous, event-driven communication." />
+             
+             
+        </div>
+     
+        <h2 id="welcome-accessing">Accessing Amazon SNS</h2>
+        <p>You can access and manage Amazon SNS through the console, AWS CLI, or AWS SDKs, depending
+            on your preferred method of interaction. The console offers a graphical interface for
+            basic tasks, while the AWS CLI and SDKs provide advanced configuration and automation
+            capabilities for more complex use cases.</p>
+        <div class="itemizedlist">
+             
+             
+             
+        <ul class="itemizedlist"><li class="listitem">
+                <p>The <a href="https://console.aws.amazon.com/sns/v3/home" rel="noopener noreferrer" target="_blank"><span>Amazon SNS console</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>
+                    provides a convenient user interface for creating topics and subscriptions,
+                    sending and receiving messages, and monitoring events and logs.</p>
+            </li><li class="listitem">
+                <p>The AWS Command Line Interface (AWS CLI) gives you direct access to the Amazon SNS API for advanced
+                    configuration and automation use cases. For more information, see <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-services-sns.html">Using Amazon SNS with the
+                    AWS CLI</a>.</p>
+            </li><li class="listitem">
+                <p>AWS provides SDKs in various languages. For more information,
+                    see <a href="https://aws.amazon.com/getting-started/tools-sdks/" rel="noopener noreferrer" target="_blank"><span>SDKs and
+                        Toolkits</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.</p>
+            </li></ul></div>
+
+     
+        <h2 id="sns-common-scenarios">Common Amazon SNS scenarios</h2>
+        <p>Use these common Amazon SNS scenarios to implement scalable, event-driven architectures and
+            ensure reliable, real-time communication between applications and users.</p>
+         
+            <h3 id="SNSFanoutScenario">Application integration</h3>
+            <p>The <em>Fanout</em> scenario is when a message published
+                to an SNS topic is replicated and pushed to multiple endpoints, such as Firehose
+                delivery streams, Amazon SQS queues, HTTP(S) endpoints, and Lambda functions. This allows
+                for parallel asynchronous processing.</p>
+            <p>For example, you can develop an application that publishes a message to an SNS
+                topic whenever an order is placed for a product. Then, SQS queues that are
+                subscribed to the SNS topic receive identical notifications for the new order. An
+                Amazon Elastic Compute Cloud (Amazon EC2) server instance attached to one of the SQS queues can handle the
+                processing or fulfillment of the order. And you can attach another Amazon EC2 server
+                instance to a data warehouse for analysis of all orders received.</p>
+            <div class="mediaobject">
+                 
+                    <img src="/images/sns/latest/dg/images/sns-fanout.png" class="aws-docs-img-whiteBg aws-docs-img-padding" alt="A fanout scenario in Amazon SNS, where a single message from a publisher is sent to an Amazon SNS topic and then replicated to multiple endpoints, such as Amazon SQS queues. Each Amazon SQS queue forwards the message to an Amazon EC2 instance—one handling order processing and another performing data analysis, demonstrating parallel, asynchronous message delivery for event-driven applications." />
+                 
+                 
+            </div>
+            <p>You can also use fanout to replicate data sent to your production environment with
+                your test environment. Expanding upon the previous example, you can subscribe
+                another SQS queue to the same SNS topic for new incoming orders. Then, by attaching
+                this new SQS queue to your test environment, you can continue to improve and test
+                your application using data received from your production environment.</p>
+            <div class="awsdocs-note awsdocs-important"><div class="awsdocs-note-title"><awsui-icon name="status-warning" variant="error"></awsui-icon><h6>Important</h6></div><div class="awsdocs-note-text"><p>Make sure that you consider data privacy and security before you send any
+                    production data to your test environment.</p></div></div>
+            <p>For more information, see the following resources:</p>
+            <div class="itemizedlist">
+                 
+                 
+                 
+                 
+                 
+            <ul class="itemizedlist"><li class="listitem">
+                    <p><a href="./sns-firehose-as-subscriber.html">Fanout to Firehose delivery streams</a></p>
+                </li><li class="listitem">
+                    <p><a href="./sns-lambda-as-subscriber.html">Fanout Amazon SNS notifications to Lambda functions for automated processing</a></p>
+                </li><li class="listitem">
+                    <p><a href="./sns-sqs-as-subscriber.html">Fanout Amazon SNS notifications to Amazon SQS queues for asynchronous processing</a></p>
+                </li><li class="listitem">
+                    <p><a href="./sns-http-https-endpoint-as-subscriber.html">Fanout Amazon SNS notifications to HTTPS endpoints</a></p>
+                </li><li class="listitem">
+                    <p><a href="https://aws.amazon.com/blogs/compute/event-driven-computing-with-amazon-sns-compute-storage-database-and-networking-services/" rel="noopener noreferrer" target="_blank"><span> Event-Driven Computing with Amazon SNS and AWS Compute,
+                            Storage, Database, and Networking Services</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>
+                    </p>
+                </li></ul></div>
+
+         
+         
+            <h3 id="SNSAlertsScenario">Application alerts</h3>
+            <p>Application and system alerts are notifications that are triggered by predefined
+                thresholds. Amazon SNS can send these notifications to specified users via SMS and email.
+                For example, you can receive immediate notification when an event occurs, such as a
+                specific change to your Amazon EC2 Auto Scaling group, a new file uploaded to an Amazon S3 bucket, or a
+                metric threshold breached in Amazon CloudWatch. For more information, see <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/US_SetupSNS.html">Setting up Amazon SNS notifications</a> in
+                the <em>Amazon CloudWatch User Guide</em>.</p>
+         
+         
+            <h3 id="SNSPushMessaging">User notifications</h3>
+            <p>Amazon SNS can send push email messages and text messages (SMS messages) to individuals
+                or groups. For example, you could send e-commerce order confirmations as user
+                notifications. For more information about using Amazon SNS to send SMS messages, see
+                    <a href="./sns-mobile-phone-number-as-subscriber.html">Mobile text messaging with Amazon SNS</a>.</p>
+         
+         
+            <h3 id="SNSMobilePushScenario">Mobile push notifications</h3>
+            <p>Mobile push notifications enable you to send messages directly to mobile apps. For
+                example, you can use Amazon SNS to send update notifications to an app. The notification
+                message can include a link to download and install the update. For more information
+                about using Amazon SNS to send push notification messages, see <a href="./sns-mobile-application-as-subscriber.html">Sending mobile push notifications with Amazon SNS</a>.</p>
+         
+     
+        <h2 id="welcome-pricing">Pricing for Amazon SNS</h2>
+        <p>Amazon SNS has no upfront costs. You pay based on the number of messages that you publish,
+            the number of notifications that you deliver, and any additional API calls for managing
+            topics and subscriptions. Delivery pricing varies by endpoint type. You can get started
+            for free with the Amazon SNS free tier. For information, see <a href="https://aws.amazon.com/sns/sms-pricing/" rel="noopener noreferrer" target="_blank"><span>Worldwide SMS Pricing</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.</p>
+    <awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="next" class="next-link" accesskey="n" href="./welcome-features.html">Amazon SNS features and capabilities</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=SNS&amp;topic_url=https://docs.aws.amazon.com/en_us/sns/latest/dg/welcome.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=SNS&amp;topic_url=https://docs.aws.amazon.com/en_us/sns/latest/dg/welcome.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>

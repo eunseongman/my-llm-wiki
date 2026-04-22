@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>What is Amazon CloudWatch? - Amazon CloudWatch</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="WhatIsCloudWatch" /><meta name="default_state" content="WhatIsCloudWatch" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" /><meta name="description" content="Monitor your AWS resources and applications using Amazon CloudWatch to collect and track metrics on performance." /><meta name="deployment_region" content="IAD" /><meta name="product" content="Amazon CloudWatch" /><meta name="guide" content="User Guide" /><meta name="abstract" content="Monitor your AWS services, collect and track metrics from AWS services and your own applications, and set alarms based on data from those metrics." /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="id-id" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="id" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="de-de" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="de" /><link rel="alternate" href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="en-us" /><link rel="alternate" href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="en" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="es-es" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="es" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="fr-fr" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="fr" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="it-it" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="it" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="ja-jp" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="ja" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="ko-kr" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="ko" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="pt-br" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="pt" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_cn/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="zh-cn" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_tw/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="zh-tw" /><link rel="alternate" href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" hreflang="x-default" /><meta name="feedback-item" content="CloudWatch" /><meta name="this_doc_product" content="Amazon CloudWatch" /><meta name="this_doc_guide" content="User Guide" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'cloudwatch'}"></script><meta id="panorama-serviceSubSection" value="User Guide" /><meta id="panorama-serviceConsolePage" value="What is Amazon CloudWatch?" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><p><a href="WhatIsCloudWatch.md">View a markdown version of this page</a></p><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>What is Amazon CloudWatch? - Amazon CloudWatch</title><meta name="pdf" content="/pdfs/AmazonCloudWatch/latest/monitoring/acw-ug.pdf#WhatIsCloudWatch" /><meta name="rss" content="amazon-cloudwatch-document-history.rss" /><meta name="forums" content="https://repost.aws/tags/TArz36ydKETWeIc1aO7QuRFw" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=CloudWatch&amp;topic_url=https://docs.aws.amazon.com/en_us/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html" /><meta name="keywords" content="CloudWatch,metrics,alarms,dashboards,monitoring,Application Signals,application performance monitoring,APM,Synthetics,canaries,CloudWatch RUM,RUM,infrastructure,Database Insights,Lambda Insights,Container Insights,observability,CloudWatch Logs,log management,log analytics,log streams,metric filters,log insights,log retention,log queries,CloudWatch agent,logs,EC2,on-premises,system metrics,custom metrics,fleet metrics,cross-account,multi-account,AWS Organizations,monitoring account,source account,solutions,JVM,NVIDIA,Tomcat,Kafka,NGINX,Internet Monitor,network monitoring,Network Flow Monitor,Network Synthetic Monitor,connectivity,performance monitoring,network insights,latency,reference,FAQ,forum" /><link rel="alternate" type="text/markdown" href="WhatIsCloudWatch.md" title="Markdown version" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "Amazon CloudWatch",
+        "item" : "https://docs.aws.amazon.com/cloudwatch/index.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "User Guide",
+        "item" : "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "What is Amazon CloudWatch?",
+        "item" : "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/AmazonCloudWatch/latest/monitoring/acw-ug.pdf#WhatIsCloudWatch" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="/cloudwatch/index.html">Amazon CloudWatch</a><a href="WhatIsCloudWatch.html">User Guide</a></div><div id="page-toc-src"><a href="#cloudwatch-monitoring-overview">Operational visibility with metrics, alarms, and dashboards</a><a href="#cloudwatch-APM-overview">Application performance monitoring (APM)</a><a href="#cloudwatch-infrastructure-monitoring-overview">Infrastructure monitoring</a><a href="#cloudwatch-logs-overview">Collect, store, and query logs</a><a href="#cloudwatch-agent-overview">Use the CloudWatch agent to gather metrics, logs, and traces from Amazon EC2 fleets</a><a href="#cloudwatch-cross-account-overview">Cross-account monitoring</a><a href="#cloudwatch-solutions-overview">Solutions catalog</a><a href="#cloudwatch-network-monitoring-overview">CloudWatch network monitoring</a><a href="#BillingPointer">Billing and costs</a><a href="#RelatedResources">Resources</a></div><awsdocs-doc-page-banner></awsdocs-doc-page-banner><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><h1 class="topictitle" id="WhatIsCloudWatch">What is Amazon CloudWatch?</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div><p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the applications you run on
+		AWS in real time, and offers many tools to give
+		you system-wide observability of your
+		application performance, operational health, and resource utilization.</p><div class="highlights" id="inline-topiclist"><h6>Topics</h6><ul><li><p><a href="#cloudwatch-monitoring-overview">Operational visibility with metrics, alarms, and dashboards</a></p></li><li><p><a href="#cloudwatch-APM-overview">Application performance monitoring (APM)</a></p></li><li><p><a href="#cloudwatch-infrastructure-monitoring-overview">Infrastructure monitoring</a></p></li><li><p><a href="#cloudwatch-logs-overview">Collect, store, and query logs</a></p></li><li><p><a href="#cloudwatch-agent-overview">Use the CloudWatch agent to gather metrics, logs, and traces from Amazon EC2 fleets</a></p></li><li><p><a href="#cloudwatch-cross-account-overview">Cross-account monitoring</a></p></li><li><p><a href="#cloudwatch-solutions-overview">Solutions catalog</a></p></li><li><p><a href="#cloudwatch-network-monitoring-overview">Network and internet monitoring</a></p></li><li><p><a href="#BillingPointer">Billing and costs</a></p></li><li><p><a href="#RelatedResources">Amazon CloudWatch resources</a></p></li></ul></div>
+			<h2 id="cloudwatch-monitoring-overview">Operational visibility with metrics, alarms, and dashboards</h2>
+			
+		<p><a href="./working_with_metrics.html">Metrics</a> collect and track key performance data at user-defined intervals. <a href="./aws-services-cloudwatch-metrics.html">Many AWS services</a>  automatically report metrics into CloudWatch, and you can also <a href="./publishingMetrics.html">publish
+				custom metrics</a> in CloudWatch from your applications.</p>
+		
+		<p><a href="./CloudWatch_Dashboards.html">Dashboards</a> offer a unified view of your resources and applications with visualizations of your metrics and logs in a single location. You can also
+			<a href="./cloudwatch-dashboard-sharing.html">share dashboards</a> across accounts and Regions for enhanced operational awareness. CloudWatch provides <a href="./GettingStarted.html">curated automatic dashboards</a> for many AWS services, 
+			so that you don't have to build them yourself.</p>
+			
+		<p>You can set up <a href="./CloudWatch_Alarms.html">alarms</a> that continuously monitor CloudWatch metrics against user-defined thresholds. They can automatically alert you to breaches of the thresholds, and
+			can also automatically respond to changes in your resources' behavior by <a href="./Acting_Alarm_Changes.html">triggering automated actions</a>.</p>
+		
+	 
+			<h2 id="cloudwatch-APM-overview">Application performance monitoring (APM)</h2>
+			
+		<p>With <a href="./CloudWatch-Application-Monitoring-Sections.html">Application Signals</a>
+			you can automatically detect and monitor your applications' key performance indicators like latency, error rates, and request rates without manual instrumentation or code changes. Application Signals
+		also provides curated dashboards so you can begin monitoring with a minimum of setup.</p>
+		<p><a href="./CloudWatch_Synthetics_Canaries.html">CloudWatch Synthetics</a> complements this by enabling you to proactively monitor your endpoints and APIs through configurable scripts called <em>canaries</em> that simulate user behavior and alert you to availability 
+			issues or performance degradation before they impact real users. You
+			can also use <a href="./CloudWatch-RUM.html">CloudWatch RUM</a> to gather performance data from real user sessions.</p>
+		<p>Use <a href="./CloudWatch-ServiceLevelObjectives.html">Service Level Objectives (SLOs)</a> in CloudWatch to define, track, and alert on specific reliability targets for your applications, helping you maintain service quality commitments by 
+			setting error budgets and monitoring SLO compliance over time.</p>
+		
+	 
+		<h2 id="cloudwatch-infrastructure-monitoring-overview">Infrastructure monitoring</h2>
+		
+		<p>Many AWS services automatically send basic metrics to CloudWatch for free.  <a href="./aws-services-cloudwatch-metrics.html">Services that send metrics are listed here</a>.  Additionally, CloudWatch provides additional monitoring capabilities 
+			for several key pieces of AWS infrastructure:</p>
+		<div class="itemizedlist">
+			 
+			 
+			 
+		<ul class="itemizedlist"><li class="listitem"><p><a href="./Database-Insights.html">Database Insights</a> allows you to monitor database performance metrics in real time, analyze SQL query performance, and troubleshoot database load issues for 
+			AWS database services.</p></li><li class="listitem"><p><a href="./Lambda-Insights.html">Lambda Insights</a> provides system-level metrics for Lambda functions, including memory and CPU utilization tracking, and cold start detection and analysis.</p> </li><li class="listitem"><p><a href="./ContainerInsights.html">Container Insights</a> allows you to collect and analyze metrics from containerized applications, 
+				on Amazon ECS clusters, Amazon EKS clusters, and self-managed Kubernetes clusters on Amazon EC2.</p></li></ul></div> 
+		
+		
+		
+	 
+		<h2 id="cloudwatch-logs-overview">Collect, store, and query logs</h2>
+		
+		<p>CloudWatch Logs offers a suite of powerful features for comprehensive log management and analysis. Logs ingested from AWS services and custom applications are stored in 
+			<a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html">log groups and streams</a> for easy organization.     
+			Use <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html">CloudWatch Logs Insights</a> to perform interactive, fast queries on your log data, with a choice of three query languages including SQL and PPL. 
+			Use <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/LogsAnomalyDetection">log anomaly detection</a> to find unusual patterns in log events in a log group, which can indicate issues. 
+				Create <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/MonitoringLogData">metric filters</a>   to extract numerical values from logs and generate CloudWatch metrics, which you can use for alerting and dashboards. 
+				Set up <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions">subscription filters</a> to process and analyze logs in real-time or route them to other services like Amazon S3 or Firehose.
+			</p>
+		
+	 
+		<h2 id="cloudwatch-agent-overview">Use the CloudWatch agent to gather metrics, logs, and traces from Amazon EC2 fleets</h2>
+		
+		<p>Use the <a href="./Install-CloudWatch-Agent.html">CloudWatch agent</a> to collect detailed system
+			metrics about processes, CPU, memory, disk usage, and network performance from your fleets of Amazon EC2 instances and on-premises servers. 
+			You can also collect and monitor custom metrics from your applications, aggregate logs from multiple sources, and configure alarms based on the collected data. 
+			You can also use the agent to gather <a href="./CloudWatch-Agent-NVIDIA-GPU.html">GPU metrics</a>. The agent supports both Windows and Linux operating systems and can integrate with Systems Manager for centralized configuration management. 
+			 </p>   
+		
+		
+	 
+		<h2 id="cloudwatch-cross-account-overview">Cross-account monitoring</h2>
+		
+		<p><a href="./CloudWatch-Cross-Account-Methods.html">CloudWatch cross-account observability</a> lets you 
+			set up a central monitoring account to monitor and troubleshoot applications that span multiple accounts. 
+			From the central account, you can view metrics, logs, and traces from source 
+			accounts across your organization. This centralized approach enables you to create cross-account dashboards, 
+			set up alarms that watch metrics from multiple accounts, and perform root-cause analysis across account 
+			boundaries. With CloudWatch cross-account observability, you can link source accounts either individually or 
+			link them automatically through AWS Organizations.</p>
+		
+	 
+		<h2 id="cloudwatch-solutions-overview">Solutions catalog</h2>
+		
+		<p>CloudWatch offers a catalog of readily available configurations to help you quickly implement monitoring for various AWS services and common workloads, such as <a href="./Solution-JVM-On-EC2.html">Java Virtual Machines (JVM)</a>, <a href="./Solution-NVIDIA-GPU-On-EC2.html">NVIDIA GPU</a>, <a href="./Solution-Kafka-On-EC2.html">Apache Kafka</a>, 
+			<a href="./Solution-Tomcat-On-EC2.html">Apache Tomcat</a>, and 
+			<a href="./Solution-NGINX-On-EC2.html">NGINX</a>. These solutions provide focused guidance, including instructions for installing and configuring the CloudWatch agent, deploying pre-defined custom dashboards, and setting up related alarms. </p>
+		
+	 
+		<h2 id="cloudwatch-network-monitoring-overview">Network and internet monitoring</h2>
+		
+		<p>CloudWatch provides comprehensive network and internet monitoring capabilities through CloudWatch Network Monitoring.</p>
+		
+		<p><a href="./CloudWatch-InternetMonitor.html">Internet Monitor</a> uses AWS global networking data to analyze 
+			internet performance and availability between your applications and end users. With an internet monitor, 
+			you can identify or get notifications for increased latency or regional disruptions that impact your customers. 
+			Internet monitors work by analyzing your VPC flow logs to provide automated insights about network traffic 
+			patterns and performance. You can also get suggestions for how to optimize application performance for your 
+			clients. </p>
+		<p><a href="./CloudWatch-NetworkFlowMonitor.html">Network Flow Monitor</a> displays network performance 
+			information gathered by lightweight software agents that you install on your instances. Using a flow monitor, 
+			you can quickly visualize packet loss and latency of your network connections over a time frame that 
+			you specify. Each monitor also generates a network health indicator (NHI), which tells you whether there 
+			were AWS network issues for the network flows tracked by your monitor during the time period that you're 
+			evaluating. </p>
+		<p>When you connect by using Direct Connect, you can use synthetic monitors in <a href="./what-is-network-monitor.html">Network Synthetic Monitor</a> to proactively monitor network connectivity 
+			by running synthetic tests between a VPC and on-premises endpoints. When you create a synthetic monitor, you 
+			specify probes by providing a VPC subnet and on-premises IP addresses. AWS creates and manages the 
+			infrastructure in the background that is required to perform round-trip time and packet loss measurements 
+			with the probes. These tests detect issues with connectivity, DNS, and latency before they impact your 
+			applications, so that you can take action to improve your end users’ experience. </p>
+	 
+		<h2 id="BillingPointer">Billing and costs</h2>
+		
+		<p>For complete information about CloudWatch pricing, see <a href="https://aws.amazon.com/cloudwatch/pricing/" rel="noopener noreferrer" target="_blank"><span>Amazon CloudWatch Pricing</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>. </p>
+		<p>For information that can help you analyze your bill and possibly optimize and reduce costs, 
+			see <a href="./cloudwatch_billing.html">Analyzing, optimizing, and reducing CloudWatch costs</a>.</p>
+		
+		
+	 
+		<h2 id="RelatedResources">Amazon CloudWatch resources</h2>
+		
+		
+		<p>The following related resources 
+can help you as you work with this service.</p>
+		<div class="table-container"><div class="table-contents"><table id="w545aab5c25b5"><thead>
+					<tr>
+						<th> Resource </th>
+						<th> Description </th>
+					</tr>
+				</thead>
+					<tr>
+						<td tabindex="-1">
+							<p>
+								<a href="http://aws.amazon.com/cloudwatch/faqs/" rel="noopener noreferrer" target="_blank"><span>Amazon CloudWatch
+									FAQs</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>
+							</p>
+						</td>
+						<td tabindex="-1">
+							<p> The FAQ covers the top questions developers have asked about this
+								product. </p>
+						</td>
+					</tr>
+					
+					<tr>
+						<td tabindex="-1">
+							<p>
+								<a href="http://aws.amazon.com/developer" rel="noopener noreferrer" target="_blank"><span>AWS Developer Center</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>
+							</p>
+						</td>
+						<td tabindex="-1">
+							<p> A central starting point to find documentation, code examples,
+								release notes, and other information to help you build innovative
+								applications with AWS. </p>
+						</td>
+					</tr>
+					<tr>
+						<td tabindex="-1">
+							<p>
+								<a href="http://aws.amazon.com/console/" rel="noopener noreferrer" target="_blank"><span>AWS Management Console</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>
+							</p>
+						</td>
+						<td tabindex="-1">
+							<p> The console allows you to perform most of the functions of
+								Amazon CloudWatch and various other AWS offerings without programming.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td tabindex="-1">
+							<p> <a href="https://forums.aws.amazon.com/forum.jspa?forumID=138" rel="noopener noreferrer" target="_blank"><span>Amazon CloudWatch Discussion Forums</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a> </p>
+						</td>
+						<td tabindex="-1">
+							<p> Community-based forum for developers to discuss technical
+								questions related to Amazon CloudWatch. </p>
+						</td>
+					</tr>
+					<tr>
+						<td tabindex="-1">
+							<p>
+								<a href="https://console.aws.amazon.com/support/home#/" rel="noopener noreferrer" target="_blank"><span>AWS Support</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>
+							</p>
+						</td>
+						<td tabindex="-1">
+							<p>The hub for creating and managing your AWS Support cases. Also
+								includes links to other helpful resources, such as forums, technical
+								FAQs, service health status, and AWS Trusted Advisor.</p>
+						</td>
+					</tr>
+					<tr>
+						<td tabindex="-1">
+							<p>
+								<a href="http://aws.amazon.com/cloudwatch/" rel="noopener noreferrer" target="_blank"><span>Amazon CloudWatch product
+									information</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a></p>
+						</td>
+						<td tabindex="-1">
+							<p>The primary web page for information about Amazon CloudWatch. </p>
+						</td>
+					</tr>
+					<tr>
+						<td tabindex="-1">
+							<p>
+								<a href="http://aws.amazon.com/contact-us/" rel="noopener noreferrer" target="_blank"><span>Contact Us</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>
+							</p>
+						</td>
+						<td tabindex="-1">A central contact point for inquiries concerning AWS billing,
+							account, events, abuse, etc. </td>
+					</tr>
+				</table></div></div>
+	<awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="next" class="next-link" accesskey="n" href="./GettingSetup.html">Getting set up</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=CloudWatch&amp;topic_url=https://docs.aws.amazon.com/en_us/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=CloudWatch&amp;topic_url=https://docs.aws.amazon.com/en_us/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>

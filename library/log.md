@@ -31,3 +31,10 @@
 - `library/index.md`에 새 세션 항목을 추가했다.
 - 재사용 가치가 큰 개념으로 `대량 업서트`, `콜레이션`, `인덱스 컬럼에 함수 적용` concept 문서를 추가했다.
 
+## [2026-04-16] report | API 연동과 게이트웨이 기초 정리
+
+- SOAP와 REST API 비교, APIM과 Kong의 의미, 로드밸런서와 리버스 프록시, API Gateway, APIM의 차이를 `report/2026-04-16-api-integration-and-gateway-report.md`에 정리했다.
+- 관련 내용을 `library/sessions/2026-04-16-api-integration-and-gateway.md` 세션 노트로 반영했다.
+- 재사용 가치가 큰 개념으로 `SOAP와 REST API`, `APIM과 API Gateway`, `로드밸런서와 리버스 프록시, API Gateway, APIM` concept 문서를 추가했다.
+- `library/index.md`에 이번 세션과 개념 문서를 연결했다.
+

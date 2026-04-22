@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>What is AWS Backup? - AWS Backup</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="whatisbackup" /><meta name="default_state" content="whatisbackup" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html" /><meta name="description" content="Use AWS Backup to centralize and automate the backup of data across AWS services in the cloud and on premises." /><meta name="deployment_region" content="IAD" /><meta name="product" content="AWS Backup" /><meta name="guide" content="Developer Guide" /><meta name="abstract" content="Provides a conceptual overview of AWS Backup, detailed instructions for using the various features, and a complete API reference for developers." /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/aws-backup/latest/devguide/whatisbackup.html" hreflang="id-id" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/aws-backup/latest/devguide/whatisbackup.html" hreflang="id" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/aws-backup/latest/devguide/whatisbackup.html" hreflang="de-de" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/aws-backup/latest/devguide/whatisbackup.html" hreflang="de" /><link rel="alternate" href="https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html" hreflang="en-us" /><link rel="alternate" href="https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html" hreflang="en" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/aws-backup/latest/devguide/whatisbackup.html" hreflang="es-es" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/aws-backup/latest/devguide/whatisbackup.html" hreflang="es" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/aws-backup/latest/devguide/whatisbackup.html" hreflang="fr-fr" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/aws-backup/latest/devguide/whatisbackup.html" hreflang="fr" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/aws-backup/latest/devguide/whatisbackup.html" hreflang="it-it" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/aws-backup/latest/devguide/whatisbackup.html" hreflang="it" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/aws-backup/latest/devguide/whatisbackup.html" hreflang="ja-jp" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/aws-backup/latest/devguide/whatisbackup.html" hreflang="ja" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/aws-backup/latest/devguide/whatisbackup.html" hreflang="ko-kr" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/aws-backup/latest/devguide/whatisbackup.html" hreflang="ko" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/aws-backup/latest/devguide/whatisbackup.html" hreflang="pt-br" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/aws-backup/latest/devguide/whatisbackup.html" hreflang="pt" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_cn/aws-backup/latest/devguide/whatisbackup.html" hreflang="zh-cn" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_tw/aws-backup/latest/devguide/whatisbackup.html" hreflang="zh-tw" /><link rel="alternate" href="https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html" hreflang="x-default" /><meta name="feedback-item" content="Cryo" /><meta name="this_doc_product" content="AWS Backup" /><meta name="this_doc_guide" content="Developer Guide" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'aws-backup'}"></script><meta id="panorama-serviceSubSection" value="Developer Guide" /><meta id="panorama-serviceConsolePage" value="What is AWS Backup?" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><p><a href="whatisbackup.md">View a markdown version of this page</a></p><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>What is AWS Backup? - AWS Backup</title><meta name="pdf" content="/pdfs/aws-backup/latest/devguide/AWSBackup-dg.pdf#whatisbackup" /><meta name="rss" content="backup-dg-rss-updates.rss" /><meta name="forums" content="https://repost.aws/tags/TAEq_tyFmxTri2axdF_HfATg" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=Cryo&amp;topic_url=https://docs.aws.amazon.com/en_us/aws-backup/latest/devguide/whatisbackup.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/aws-backup/latest/devguide/whatisbackup.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/aws-backup/latest/devguide/whatisbackup.html" /><meta name="keywords" content="AWS Backup use cases,using AWS Backup" /><link rel="alternate" type="text/markdown" href="whatisbackup.md" title="Markdown version" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "AWS Backup",
+        "item" : "https://docs.aws.amazon.com/aws-backup/index.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "Developer Guide",
+        "item" : "https://docs.aws.amazon.com/aws-backup/latest/devguide"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "What is AWS Backup?",
+        "item" : "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/aws-backup/latest/devguide/AWSBackup-dg.pdf#whatisbackup" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="/aws-backup/index.html">AWS Backup</a><a href="whatisbackup.html">Developer Guide</a></div><div id="page-toc-src"><a href="#feature-overview">Feature overview</a><a href="#what-is-backup-getstarted">Getting started</a><a href="#supported-resources">Supported AWS resources and applications</a><a href="#pricing">Pricing</a></div><awsdocs-doc-page-banner></awsdocs-doc-page-banner><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><h1 class="topictitle" id="whatisbackup">What is AWS Backup?</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div><p>AWS Backup is a fully-managed service that makes it easy to centralize and automate data
+    protection across AWS services, in the cloud, and on premises. Using this service, you can
+    configure backup policies and monitor activity for your AWS resources in one place. It allows
+    you to automate and consolidate backup tasks that were previously performed service-by-service,
+    and removes the need to create custom scripts and manual processes. With a few clicks in the
+    AWS Backup console, you can automate your data protection policies and schedules.</p><p>AWS Backup does not govern backups you take in your AWS environment outside of AWS Backup.
+    Therefore, if you want a centralized, end-to-end solution for business and regulatory compliance
+    requirements, start using AWS Backup today.</p>
+    <h2 id="feature-overview">Feature overview</h2>
+    <p>AWS Backup provides many features and capabilities, including the following.</p>
+    
+     
+      <h3 id="centralized-backup-management">Centralized backup management</h3>
+      <p>AWS Backup provides a centralized backup console, a set of backup APIs, and the AWS Command Line Interface
+        (AWS CLI) to manage backups across the AWS services that your applications use. With AWS Backup,
+        you can centrally manage backup policies that meet your backup requirements. You can then
+        apply them to your AWS resources across AWS services, enabling you to back up your
+        application data in a consistent and compliant manner. The AWS Backup centralized backup console
+        offers a consolidated view of your backups and backup activity logs, making it easier to
+        audit your backups and ensure compliance.</p>
+     
+     
+      <h3 id="policy-based-backup-solution">Policy-based backup</h3>
+      <p>With AWS Backup, you can create backup policies known as <em>backup plans</em>.
+        Use these backup plans to define your backup requirements and then apply them to the AWS
+        resources that you want to protect across the AWS services that you use. You can create
+        separate backup plans that each meet specific business and regulatory compliance
+        requirements. This helps ensure that each AWS resource is backed up according to your
+        requirements. Backup plans make it easy to enforce your backup strategy across your
+        organization and across your applications in a scalable manner.</p>
+      <p>For all the configuration options for backup plans, see <a href="./plan-options-and-configuration.html">Backup plan options and configuration</a>.</p>
+     
+     
+      <h3 id="tag-based-backup-policies">Tag-based backup policies</h3>
+      <p>You can use AWS Backup to apply backup plans to your AWS resources in a wide variety of
+        ways, including tagging them. Tagging makes it easier to implement your backup strategy
+        across all your applications and to ensure that all your AWS resources are backed up and
+        protected. AWS tags are a great way to organize and classify your AWS resources.
+        Integration with AWS tags enables you to quickly apply a backup plan to a group of AWS
+        resources, so that they are backed up in a consistent and compliant manner.</p>
+      <p>For all the ways you can assign your resources to backup plans, see <a href="./assigning-resources.html">Select AWS services to backup</a>.</p>
+     
+     
+      <h3 id="lifecycle-management-policies">Lifecycle management policies</h3>
+      <p>AWS Backup enables you to meet compliance requirements while minimizing backup storage costs
+        by storing backups in a low-cost cold storage tier. You can configure lifecycle policies
+        that automatically transition backups from warm storage to cold storage according to a
+        schedule that you define.</p>
+      <p>For a list of resources which can be transitioned to cold storage, see 
+        <a href="./backup-feature-availability.html#features-by-resource">Feature availability by resource</a>. 
+        For steps to turn on cold storage in your backup plan, see 
+        <a href="./plan-options-and-configuration.html#backup-lifecycle">Lifecycle and storage tiers</a>.</p>
+      
+     
+     
+      <h3 id="cross-region-replication">Cross-Region backup</h3>
+      <p>Using AWS Backup, you can copy backups to multiple different AWS Regions on demand or
+        automatically as part of a scheduled backup plan. Cross-Region backup is particularly
+        valuable if you have business continuity or compliance requirements to store backups a
+        minimum distance away from your production data. For more information, see <a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/cross-region-backup.html"> Creating
+          backup copies across AWS Regions</a>.</p>
+     
+     
+      <h3 id="cross-account">Cross-account management and cross-account backup</h3>
+      <p>You can use AWS Backup to manage your backups across all AWS accounts inside your <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html">AWS Organizations</a> structure. With cross-account
+        management, you can automatically use backup policies to apply backup plans across the
+        AWS accounts within your organization. This makes compliance and data protection efficient
+        at scale and reduces operational overhead. It also helps eliminate manually duplicating
+        backup plans across individual accounts. For more information, see <a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/manage-cross-account.html">Managing
+          AWS Backup resources across multiple AWS accounts</a>.</p>
+      <p>You can also copy backups to multiple different AWS accounts inside your AWS Organizations
+        management structure. This way, you can "fan in" backups to a single repository account,
+        then "fan out" backups for greater resilience. <a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/create-cross-account-backup.html">Creating backup copies
+          across AWS accounts</a>.</p>
+      <p>Before you can use the cross-account management and cross-account backup features, you
+        must have an existing organization structure configured in AWS Organizations. An
+        <em>organizational unit</em> (OU) is a group of accounts that can be managed
+        as a single entity. AWS Organizations is a list of accounts that can be grouped into organizational
+        units and managed as a single entity.</p>
+     
+     
+      <h3 id="auditing-and-reporting">Auditing and reporting with AWS Backup Audit Manager</h3>
+      <p>AWS Backup Audit Manager helps you simplify data governance and compliance management of your
+        backups across AWS. AWS Backup Audit Manager provides built-in, customizable controls that you
+        can align with your organizational requirements. You can also use these controls to
+        automatically track your backup activities and resources. </p>
+      <p>AWS Backup Audit Manager can help you locate specific activities and resources that are not
+        yet compliant with the controls that you defined. It also generates daily reports that you
+        can use to demonstrate evidence of compliance with your controls over time. </p>
+      <p>To include your backup compliance alongside your overall compliance posture, you can
+        automatically import AWS Backup Audit Manager findings into AWS Audit Manager.</p>
+     
+     
+      <h3 id="incremental-backups">Incremental backups</h3>
+      <p>AWS Backup efficiently stores your periodic backups incrementally. The first backup of an
+        AWS resource backs up a full copy of your data. For each successive incremental backup,
+        only the changes to your AWS resources are backed up. Incremental backups enable you to
+        benefit from the data protection of frequent backups while minimizing storage costs.</p>
+      <p>For a list of which resources support incremental backups, see <a href="./backup-feature-availability.html#features-by-resource">Feature availability by resource</a>.</p>
+      <p>For more information on behaviors in vaults, see <a href="./creating-a-backup.html#incremental-backup-works">Incremental backups</a>.</p>
+     
+     
+      <h3 id="full-management">Full AWS Backup management</h3>
+      <p>Some resource types support full AWS Backup management. The benefits of full AWS Backup management
+        include:</p>
+      <div class="itemizedlist">
+         
+         
+         
+      <ul class="itemizedlist"><li class="listitem">
+          <p><b>Independent encryption</b>. AWS Backup automatically
+            encrypts your backups with the KMS key of your AWS Backup vault, instead of using the same
+            encryption key as your source resource. This increases your layers of defense. See <a href="./encryption.html">Encryption for backups in AWS Backup</a> for more information.</p>
+        </li><li class="listitem">
+          <p><b><code class="code">awsbackup</code> Amazon Resource Names
+            (ARNs)</b>. Backup ARNs begin with <code class="code">arn:aws:backup</code> instead of
+            <code class="code">arn:aws:<code class="replaceable">source-resource</code></code>. This allows you to
+            create access policies that apply specifically to backups and not the source resources.
+            See <a href="./access-control.html">Access control</a> for more
+            information.</p>
+        </li><li class="listitem">
+          <p><b>Centralized backup billing and Cost Explorer cost allocation
+            tags.</b>. Charges for AWS Backup (including storage, data transfers, restores, and
+            early deletion) appear under "Backup" in your Amazon Web Services bill, instead of appearing under
+            each supported resource. You can also use Cost Explorer cost allocation tags to track and
+            optimize your backup costs. See <a href="./metering-and-billing.html">Metering, costs, and billing for AWS Backup</a> for more information.</p>
+        </li></ul></div>
+      <p>To see which resource types are eligible for full AWS Backup management, see <a href="./backup-feature-availability.html#features-by-resource">Feature availability by resource</a>.</p>
+     
+     
+      <h3 id="backup-activity-monitoring">Backup activity monitoring</h3>
+      <p>AWS Backup provides a dashboard that makes it simple to audit backup and restore activity
+        across AWS services. With just a few clicks on the AWS Backup console, you can view the status
+        of recent backup jobs. You can also restore jobs across AWS services to ensure that your
+        AWS resources are properly protected.</p>
+      <p>AWS Backup integrates with Amazon CloudWatch and Amazon EventBridge. CloudWatch allows you to track metrics and create
+        alarms. EventBridge allows you to view and monitor AWS Backup events. For more information, see <a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/eventbridge.html">Monitoring AWS Backup
+          events using EventBridge</a> and <a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/cloudwatch.html">Monitoring AWS Backup metrics with
+            CloudWatch</a>.</p>
+      <p>AWS Backup integrates with AWS CloudTrail. CloudTrail gives you a consolidated view of backup activity
+        logs that make it quick and easy to audit how your resources are backed up. AWS Backup also
+        integrates with Amazon Simple Notification Service (Amazon SNS), providing you with backup activity notifications, such as
+        when a backup succeeds or a restore has been initiated. For more information, see <a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/logging-using-cloudtrail.html">Logging AWS Backup API calls with CloudTrail</a> and <a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-notifications.html#backup-notifications-section">Amazon SNS and AWS Backup events</a>.</p>
+     
+     
+      <h3 id="backup-access-policies">Secure your data in backup vaults</h3>
+      <p>The content of each AWS Backup backup is immutable, meaning that no one can alter that
+        content. AWS Backup further secures your backups in backup vaults, which separates them safely
+        from their source instances. For example, your vault will retain your Amazon EC2 and Amazon EBS
+        backups according to the lifecycle policy you choose, even if you delete the source Amazon EC2
+        instance and Amazon EBS volumes.</p>
+      <p>Backup vaults offer encryption and resource-based access policies that let you define
+        who has access to your backups. You can define access policies for a backup vault that
+        define who has access to the backups within that vault and what actions they can take. This
+        provides a simple and secure way to control access to your backups across AWS services. To
+        review AWS and customer managed policies for AWS Backup, see <a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/security-iam-awsmanpol.html">Managed policies for
+          AWS Backup</a>.</p>
+      <p>You can use AWS Backup Vault Lock to prevent anyone (including you) from deleting backups or
+        altering their retention period. AWS Backup Vault Lock helps you enforce a
+        <em>write-once-read-many</em> (WORM) model and add another layer of defense to
+        your defense in depth. To get started, see <a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/vault-lock.html">AWS Backup Vault Lock</a>.</p>
+     
+    
+   
+    <h2 id="what-is-backup-getstarted">Getting started</h2>
+    <p>To learn more about AWS Backup, we recommend that you start with <a href="./getting-started.html">Getting started with AWS Backup</a>.</p>
+   
+    <h2 id="supported-resources">Supported AWS resources and applications</h2>
+    <p>The following are AWS resources and third-party applications that you can back up and
+      restore using AWS Backup. For more information, see <a href="./backup-feature-availability.html">AWS Backup feature availability</a>.</p>
+    <div class="table-container" id="supported-services-table"><div class="table-contents disable-scroll"><table id="w363aab5c11b5"><thead>
+          <tr>
+            <th>Service</th>
+            <th>Supported resource types</th>
+          </tr>
+        </thead>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/">Amazon Elastic Compute Cloud (Amazon EC2)</a></td>
+            <td tabindex="-1">Amazon EC2 instances backed by Amazon EBS volumes</td>
+          </tr>
+          
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/">Amazon Simple Storage Service (Amazon S3)</a></td>
+            <td tabindex="-1">Amazon S3 data </td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html">Amazon Elastic Block Store (Amazon EBS)</a></td>
+            <td tabindex="-1">Amazon EBS volumes</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html">Amazon DynamoDB</a></td>
+            <td tabindex="-1">Amazon DynamoDB tables</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/">Amazon Relational Database Service (Amazon RDS)</a></td>
+            <td tabindex="-1">Amazon RDS database instances (including all database engines);
+            Multi-Availability Zone clusters</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/aurora-dsql/latest/userguide/what-is-aurora-dsql.html">Amazon Aurora DSQL</a></td>
+            <td tabindex="-1">Single-Region clusters and multi-Region clusters</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/">Amazon Aurora</a></td>
+            <td tabindex="-1">Aurora clusters</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/efs/latest/ug/">Amazon Elastic File System (Amazon EFS)</a></td>
+            <td tabindex="-1">Amazon EFS file systems</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/fsx/latest/LustreGuide/">FSx for Lustre</a></td>
+            <td tabindex="-1">FSx for Lustre file systems</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html">FSx for Windows File Server </a></td>
+            <td tabindex="-1">FSx for Windows File Server file systems</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html">Amazon FSx for NetApp ONTAP</a></td>
+            <td tabindex="-1">FSx for ONTAP file systems</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/what-is-fsx.html">Amazon FSx for OpenZFS</a></td>
+            <td tabindex="-1">FSx for OpenZFS file systems</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/storagegateway/latest/vgw/WhatIsStorageGateway.html">AWS Storage Gateway (Volume Gateway)</a></td>
+            <td tabindex="-1">AWS Storage Gateway volumes</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/documentdb/latest/developerguide/">Amazon DocumentDB</a></td>
+            <td tabindex="-1">Amazon DocumentDB instance-based clusters</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/neptune/latest/userguide/">Amazon Neptune</a></td>
+            <td tabindex="-1">Amazon Neptune clusters</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/redshift/latest/dg/welcome.html">Amazon Redshift</a></td>
+            <td tabindex="-1">Amazon Redshift clusters</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-serverless.html">Amazon Redshift Serverless</a></td>
+            <td tabindex="-1">Amazon Redshift namespaces</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/timestream/latest/developerguide/what-is-timestream.html">Amazon Timestream</a></td>
+            <td tabindex="-1">Amazon Timestream tables</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://aws.amazon.com/vmware/" rel="noopener noreferrer" target="_blank"><span>VMware Cloud™ on AWS</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a></td>
+            <td tabindex="-1">VMware Cloud™ virtual machines on AWS</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://aws.amazon.com/vmware/aws-services/" rel="noopener noreferrer" target="_blank"><span>VMware Cloud™ on AWS Outposts</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a></td>
+            <td tabindex="-1">VMware Cloud™ virtual machines on AWS Outposts</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html">CloudFormation</a></td>
+            <td tabindex="-1">CloudFormation stacks</td>
+          </tr>
+          <tr>
+            <td tabindex="-1"><a href="https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-saphana.html">
+              SAP HANA databases</a></td>
+            <td tabindex="-1">SAP HANA databases on Amazon EC2 instances</td>
+          </tr>
+          <tr>
+                <td tabindex="-1"><a href="https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html">Amazon Elastic Kubernetes Service (Amazon EKS)</a></td>
+                <td tabindex="-1">Amazon EKS clusters and persistent storage backups</td>
+          </tr>
+        </table></div></div>
+   
+    <h2 id="pricing">Pricing</h2>
+    <p>With AWS Backup, you pay for backup storage, data restored, restore testing, cross-Region data transfer, and
+      AWS Backup Audit Manager. For more information, see <a href="https://aws.amazon.com/backup/pricing/" rel="noopener noreferrer" target="_blank"><span>AWS Backup Pricing</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.</p>
+  <awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="next" class="next-link" accesskey="n" href="./backup-feature-availability.html">AWS Backup feature availability</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=Cryo&amp;topic_url=https://docs.aws.amazon.com/en_us/aws-backup/latest/devguide/whatisbackup.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=Cryo&amp;topic_url=https://docs.aws.amazon.com/en_us/aws-backup/latest/devguide/whatisbackup.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>

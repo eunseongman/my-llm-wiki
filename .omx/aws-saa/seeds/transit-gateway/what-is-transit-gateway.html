@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>What is AWS Transit Gateway for Amazon VPC? - Amazon VPC</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="what-is-transit-gateway" /><meta name="default_state" content="what-is-transit-gateway" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html" /><meta name="description" content="AWS Transit Gateway is a network transit hub used to interconnect virtual private clouds (VPCs) and on-premises networks." /><meta name="deployment_region" content="IAD" /><meta name="product" content="Amazon VPC" /><meta name="guide" content="AWS Transit Gateway" /><meta name="abstract" content="A transit gateway is a network transit hub that you can use to interconnect your virtual private clouds and on-premises networks. A transit gateway is a network transit hub that you can use to interconnect your virtual private clouds and on-premises networks." /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="id-id" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="id" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="de-de" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="de" /><link rel="alternate" href="https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="en-us" /><link rel="alternate" href="https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="en" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="es-es" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="es" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="fr-fr" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="fr" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="it-it" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="it" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="ja-jp" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="ja" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="ko-kr" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="ko" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="pt-br" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="pt" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_cn/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="zh-cn" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_tw/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="zh-tw" /><link rel="alternate" href="https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html" hreflang="x-default" /><meta name="feedback-item" content="TGW" /><meta name="this_doc_product" content="Amazon VPC" /><meta name="this_doc_guide" content="AWS Transit Gateway" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'vpc'}"></script><meta id="panorama-serviceSubSection" value="AWS Transit Gateway" /><meta id="panorama-serviceConsolePage" value="What is AWS Transit Gateway for Amazon VPC?" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><p><a href="what-is-transit-gateway.md">View a markdown version of this page</a></p><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>What is AWS Transit Gateway for Amazon VPC? - Amazon VPC</title><meta name="pdf" content="/pdfs/vpc/latest/tgw/vpc-tgw.pdf#what-is-transit-gateway" /><meta name="rss" content="transit-gateway-release-notes.rss" /><meta name="forums" content="https://repost.aws/tags/TATGuEiYydTVCPMhSnXFN6gA" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=TGW&amp;topic_url=https://docs.aws.amazon.com/en_us/vpc/latest/tgw/what-is-transit-gateway.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/vpc/latest/tgw/what-is-transit-gateway.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/vpc/latest/tgw/what-is-transit-gateway.html" /><meta name="keywords" content="transit gateway,vpc,virtual private cloud,region,peering,on-premises,network traffic,infrastructure,attachment,mtu,route,propagation,route table,vpn,flow logs" /><link rel="alternate" type="text/markdown" href="what-is-transit-gateway.md" title="Markdown version" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "Amazon VPC",
+        "item" : "https://docs.aws.amazon.com/vpc/index.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "AWS Transit Gateway",
+        "item" : "https://docs.aws.amazon.com/vpc/latest/tgw"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "What is AWS Transit Gateway for Amazon VPC?",
+        "item" : "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/vpc/latest/tgw/vpc-tgw.pdf#what-is-transit-gateway" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="/vpc/index.html">Amazon VPC</a><a href="what-is-transit-gateway.html">AWS Transit Gateway</a></div><div id="page-toc-src"><a href="#concepts">Transit gateway concepts</a><a href="#how-to-get-started">How to get started with transit gateways</a><a href="#tgw-interfaces">Work with transit gateways</a><a href="#pricing">Pricing</a></div><awsdocs-doc-page-banner></awsdocs-doc-page-banner><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><h1 class="topictitle" id="what-is-transit-gateway">What is AWS Transit Gateway for Amazon VPC?</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div><p>AWS Transit Gateway is a network transit hub used to interconnect virtual private clouds (VPCs)
+    and on-premises networks. As your cloud infrastructure expands globally, inter-Region peering
+    connects transit gateways together using the AWS Global Infrastructure. All network traffic between
+    AWS data centers is automatically encrypted at the physical layer.</p><p>For more information, see the <a href="https://aws.amazon.com/transit-gateway/" rel="noopener noreferrer" target="_blank"><span>AWS Transit Gateway</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a> website.</p>
+    <h2 id="concepts">Transit gateway concepts</h2>
+    <div class="itemizedlist">
+      <p>The following are the key concepts for transit gateways:</p>
+       
+       
+      
+       
+      
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+         <p><span class="topcom">Attachments</span> — You can attach the
+          following:</p>
+        <div class="itemizedlist">
+           
+           
+           
+           
+           
+           
+           
+        <ul class="itemizedlist"><li class="listitem">
+            <p>One or more VPCs</p>
+          </li><li class="listitem">
+            <p>A Connect SD-WAN/third-party network appliance</p>
+          </li><li class="listitem">
+            <p>An AWS Direct Connect gateway</p>
+          </li><li class="listitem">
+            <p>A peering connection with another transit gateway</p>
+          </li><li class="listitem">
+            <p>A VPN connection to a transit gateway</p>
+          </li><li class="listitem">
+            <p>A VPN Concentrator to a transit gateway</p>
+          </li><li class="listitem">
+            <p>A network function attachment. For more information, see <a href="./how-transit-gateways-work.html#nf-attachment-overview">Network function attachments</a>.</p>
+          </li></ul></div>
+      </li><li class="listitem">
+        <p><span class="topcom">Transit gateway Maximum Transmission Unit (MTU)</span> —
+          The maximum transmission unit (MTU) of a network connection is the size, in bytes, of the
+          largest permissible packet that can be passed over the connection. The larger the MTU of a
+          connection, the more data that can be passed in a single packet. A transit gateway supports an MTU
+          of 8500 bytes for traffic between VPCs, Direct Connect, Transit Gateway Connect, and peering
+          attachments (intra-Region, inter-Region, and Cloud WAN peering attachments). Traffic over
+          VPN connections can have an MTU of 1500 bytes.</p>
+      </li><li class="listitem">
+        <p><span class="topcom">Encryption control</span> — A transit gateway can be configured to
+          support Encryption control, which enforces encryption-in-transit for all traffic on VPCs
+          attached to the transit gateway. When Encryption control  is enabled, the transit gateway
+          can be attached to VPCs with Encryption control enforced. This feature ensures that all
+          traffic flowing through the transit gateway is encrypted, providing enhanced security for
+          your network communications.</p>
+      </li><li class="listitem">
+        <p><span class="topcom">Transit gateway route table</span> — A transit gateway has a
+          default route table and can optionally have additional route tables. A route table
+          includes dynamic and static routes that decide the next hop based on the destination IP
+          address of the packet. The target of these routes could be any transit gateway attachment. By
+          default, transit gateway attachments are associated with the default transit gateway route
+          table.</p>
+      </li><li class="listitem">
+        <p><span class="topcom">Associations</span> — Each attachment is associated with
+          exactly one route table. Each route table can be associated with zero to many
+          attachments.</p>
+      </li><li class="listitem">
+        <p><span class="topcom">Route propagation</span> — A VPC, VPN connection, or
+          Direct Connect gateway can dynamically propagate routes to a transit gateway route table.
+          With a Connect attachment, the routes are propagated to a transit gateway route table by default.
+          With a VPC, you must create static routes to send traffic to the transit gateway. With a VPN
+          connection, routes are propagated from the transit gateway to your on-premises router using Border
+          Gateway Protocol (BGP). With a Direct Connect gateway, allowed prefixes are originated to
+          your on-premises router using BGP. With a peering attachment, you must create a static
+          route in the transit gateway route table to point to the peering attachment.</p>
+      </li></ul></div>
+   
+    <h2 id="how-to-get-started">How to get started with transit gateways</h2>
+    <p>Use the following resources to help you create and use a transit gateway.</p>
+    <div class="itemizedlist">
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p><a href="./how-transit-gateways-work.html">How transit gateways work</a></p>
+      </li><li class="listitem">
+        <p><a href="./tgw-getting-started.html">Get started with transit gateways</a></p>
+      </li><li class="listitem">
+        <p><a href="./tgw-best-design-practices.html">Design best practices</a></p>
+      </li></ul></div>
+   
+    <h2 id="tgw-interfaces">Work with transit gateways</h2>
+    <p>You can create, access, and manage your transit gateways using any of the following interfaces:</p>
+    <div class="itemizedlist">
+       
+       
+       
+       
+    <ul class="itemizedlist"><li class="listitem">
+        <p><b>AWS Management Console</b> — Provides a web interface that you
+          can use to access your transit gateways.</p>	
+      </li><li class="listitem">
+        <p><b>AWS Command Line Interface (AWS CLI)</b> — Provides
+          commands for a broad set of AWS services, including Amazon VPC, and is supported on
+                    Windows, macOS, and Linux. For more information, see <a href="https://aws.amazon.com/cli/" rel="noopener noreferrer" target="_blank"><span>AWS Command Line Interface</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.</p>
+      </li><li class="listitem">
+        <p><b>AWS SDKs</b> — Provides language-specific API
+          operations and takes care of many of the connection details, such as calculating
+          signatures, handling request retries, and handling errors. For more information, see
+          <a href="https://aws.amazon.com/developer/tools/" rel="noopener noreferrer" target="_blank"><span>AWS SDKs</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.</p>
+      </li><li class="listitem">
+        <p><b>Query API</b> — Provides low-level API actions
+          that you call using HTTPS requests. Using the Query API is the most direct way to access
+          Amazon VPC, but it requires that your application handle low-level details such as generating
+          the hash to sign the request, and handling errors. For more information, see the
+          <a href="https://docs.aws.amazon.com/AWSEC2/latest/APIReference/">Amazon EC2 API Reference</a>.</p>
+      </li></ul></div>	
+   
+    <h2 id="pricing">Pricing</h2>
+    <p>You are charged hourly for each attachment on a transit gateway, and you are charged for
+            the amount of traffic processed on the transit gateway. By default, data processing charges 
+            are allocated to the account that owns the source attachment. You can use flexible cost allocation to customize how these charges are allocated based on your organizational needs.
+            For more information, see <a href="https://aws.amazon.com/transit-gateway/pricing/" rel="noopener noreferrer" target="_blank"><span>AWS Transit Gateway pricing</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a> 
+            and <a href="./metering-policy.html">Flexible cost allocation</a>.</p>
+  <awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="next" class="next-link" accesskey="n" href="./how-transit-gateways-work.html">How transit gateways work</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=TGW&amp;topic_url=https://docs.aws.amazon.com/en_us/vpc/latest/tgw/what-is-transit-gateway.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=TGW&amp;topic_url=https://docs.aws.amazon.com/en_us/vpc/latest/tgw/what-is-transit-gateway.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>

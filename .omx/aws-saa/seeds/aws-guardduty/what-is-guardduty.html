@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>What is Amazon GuardDuty? - Amazon GuardDuty</title><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="assets_root" content="/assets" /><meta name="target_state" content="what-is-guardduty" /><meta name="default_state" content="what-is-guardduty" /><link rel="icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico" /><link rel="canonical" href="https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html" /><meta name="description" content="Use Amazon GuardDuty to analyze event logs and detect potentially malicious or suspicious activities in your AWS environment." /><meta name="deployment_region" content="IAD" /><meta name="product" content="Amazon GuardDuty" /><meta name="guide" content="Amazon GuardDuty User Guide" /><meta name="abstract" content="Use Amazon GuardDuty to continuously monitor the security of your AWS environment." /><meta name="guide-locale" content="en_us" /><meta name="tocs" content="toc-contents.json" /><link rel="canonical" href="https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/guardduty/latest/ug/what-is-guardduty.html" hreflang="id-id" /><link rel="alternate" href="https://docs.aws.amazon.com/id_id/guardduty/latest/ug/what-is-guardduty.html" hreflang="id" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/guardduty/latest/ug/what-is-guardduty.html" hreflang="de-de" /><link rel="alternate" href="https://docs.aws.amazon.com/de_de/guardduty/latest/ug/what-is-guardduty.html" hreflang="de" /><link rel="alternate" href="https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html" hreflang="en-us" /><link rel="alternate" href="https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html" hreflang="en" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/guardduty/latest/ug/what-is-guardduty.html" hreflang="es-es" /><link rel="alternate" href="https://docs.aws.amazon.com/es_es/guardduty/latest/ug/what-is-guardduty.html" hreflang="es" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/guardduty/latest/ug/what-is-guardduty.html" hreflang="fr-fr" /><link rel="alternate" href="https://docs.aws.amazon.com/fr_fr/guardduty/latest/ug/what-is-guardduty.html" hreflang="fr" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/guardduty/latest/ug/what-is-guardduty.html" hreflang="it-it" /><link rel="alternate" href="https://docs.aws.amazon.com/it_it/guardduty/latest/ug/what-is-guardduty.html" hreflang="it" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/guardduty/latest/ug/what-is-guardduty.html" hreflang="ja-jp" /><link rel="alternate" href="https://docs.aws.amazon.com/ja_jp/guardduty/latest/ug/what-is-guardduty.html" hreflang="ja" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/guardduty/latest/ug/what-is-guardduty.html" hreflang="ko-kr" /><link rel="alternate" href="https://docs.aws.amazon.com/ko_kr/guardduty/latest/ug/what-is-guardduty.html" hreflang="ko" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/guardduty/latest/ug/what-is-guardduty.html" hreflang="pt-br" /><link rel="alternate" href="https://docs.aws.amazon.com/pt_br/guardduty/latest/ug/what-is-guardduty.html" hreflang="pt" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_cn/guardduty/latest/ug/what-is-guardduty.html" hreflang="zh-cn" /><link rel="alternate" href="https://docs.aws.amazon.com/zh_tw/guardduty/latest/ug/what-is-guardduty.html" hreflang="zh-tw" /><link rel="alternate" href="https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html" hreflang="x-default" /><meta name="feedback-item" content="GuardDuty" /><meta name="this_doc_product" content="Amazon GuardDuty" /><meta name="this_doc_guide" content="Amazon GuardDuty User Guide" /><head xmlns="http://www.w3.org/1999/xhtml"> <script defer="" src="/assets/r/awsdocs-doc-page.2.0.0.js"></script><link href="/assets/r/awsdocs-doc-page.2.0.0.css" rel="stylesheet"/></head>
+<script defer="" id="awsc-panorama-bundle" type="text/javascript" src="https://prod.pa.cdn.uis.awsstatic.com/panorama-nav-init.js" data-config="{'appEntity':'aws-documentation','region':'us-east-1','service':'guardduty'}"></script><meta id="panorama-serviceSubSection" value="Amazon GuardDuty User Guide" /><meta id="panorama-serviceConsolePage" value="What is Amazon GuardDuty?" /></head><body class="awsdocs awsui"><div class="awsdocs-container"><p><a href="what-is-guardduty.md">View a markdown version of this page</a></p><awsdocs-header></awsdocs-header><awsui-app-layout id="app-layout" class="awsui-util-no-gutters" ng-controller="ContentController as $ctrl" header-selector="awsdocs-header" navigation-hide="false" navigation-width="$ctrl.navWidth" navigation-open="$ctrl.navOpen" navigation-change="$ctrl.onNavChange($event)" tools-hide="$ctrl.hideTools" tools-width="$ctrl.toolsWidth" tools-open="$ctrl.toolsOpen" tools-change="$ctrl.onToolsChange($event)"><div id="guide-toc" dom-region="navigation"><awsdocs-toc></awsdocs-toc></div><div id="main-column" dom-region="content" tabindex="-1"><awsdocs-view class="awsdocs-view"><div id="awsdocs-content"><head><title>What is Amazon GuardDuty? - Amazon GuardDuty</title><meta name="pdf" content="/pdfs/guardduty/latest/ug/guardduty-ug.pdf#what-is-guardduty" /><meta name="rss" content="amazon-guardduty-doc-history.rss" /><meta name="forums" content="https://repost.aws/tags/TAkQ_AMw65SICuEGEmuUXv4g" /><meta name="feedback" content="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=GuardDuty&amp;topic_url=https://docs.aws.amazon.com/en_us/guardduty/latest/ug/what-is-guardduty.html" /><meta name="feedback-yes" content="feedbackyes.html?topic_url=https://docs.aws.amazon.com/en_us/guardduty/latest/ug/what-is-guardduty.html" /><meta name="feedback-no" content="feedbackno.html?topic_url=https://docs.aws.amazon.com/en_us/guardduty/latest/ug/what-is-guardduty.html" /><meta name="keywords" content="GuardDuty,Amazon GuardDuty,GuardDuty data source,GuardDuty finding types,GuardDuty protection,Continuous monitoring of AWS resource,Detect threat in AWS resource,Secure AWS resources,Runtime Monitoring,Malware Protection for S3,Malware Protection for EC2,EKS Protection,EKS Audit Log Monitoring,Lambda Protection,S3 Protection" /><link rel="alternate" type="text/markdown" href="what-is-guardduty.md" title="Markdown version" /><script type="application/ld+json">
+{
+    "@context" : "https://schema.org",
+    "@type" : "BreadcrumbList",
+    "itemListElement" : [
+      {
+        "@type" : "ListItem",
+        "position" : 1,
+        "name" : "AWS",
+        "item" : "https://aws.amazon.com"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 2,
+        "name" : "Amazon GuardDuty",
+        "item" : "https://docs.aws.amazon.com/guardduty/index.html"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 3,
+        "name" : "Amazon GuardDuty User Guide",
+        "item" : "https://docs.aws.amazon.com/guardduty/latest/ug"
+      },
+      {
+        "@type" : "ListItem",
+        "position" : 4,
+        "name" : "What is Amazon GuardDuty?",
+        "item" : "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html"
+      }
+    ]
+}
+</script></head><body><div id="main"><div style="display: none"><a href="/pdfs/guardduty/latest/ug/guardduty-ug.pdf#what-is-guardduty" target="_blank" rel="noopener noreferrer" title="Open PDF"></a></div><div id="breadcrumbs" class="breadcrumb"><a href="/index.html">Documentation</a><a href="/guardduty/index.html">Amazon GuardDuty</a><a href="what-is-guardduty.html">Amazon GuardDuty User Guide</a></div><div id="page-toc-src"><a href="#features-of-guardduty">Features of GuardDuty</a><a href="#guardduty-pci-dss-compliance">PCI DSS Compliance</a></div><awsdocs-doc-page-banner></awsdocs-doc-page-banner><div id="main-content" class="awsui-util-container"><div id="main-col-body"><awsdocs-language-banner data-service="$ctrl.pageService"></awsdocs-language-banner><h1 class="topictitle" id="what-is-guardduty">What is Amazon GuardDuty?</h1><div class="awsdocs-page-header-container"><awsdocs-page-header></awsdocs-page-header><awsdocs-filter-selector id="awsdocs-filter-selector"></awsdocs-filter-selector></div><p>Amazon GuardDuty is a threat detection service that continuously monitors, analyzes, and
+        processes AWS data sources and logs in your AWS environment. GuardDuty uses threat
+        intelligence feeds, such as lists of malicious IP addresses and domains, file hashes, and
+        machine learning (ML) models to identify suspicious and potentially malicious activity in
+        your AWS environment. The following list provides an overview of potential threat
+        scenarios that GuardDuty can help you detect:</p><div class="itemizedlist">
+         
+         
+         
+         
+         
+    <ul class="itemizedlist"><li class="listitem">
+            <p>Compromised and exfiltrated AWS credentials.</p>
+        </li><li class="listitem">
+            <p>Data exfiltration and destruction that can lead to a ransomware event. Unusual
+                patterns of login events in the supported engine versions of Amazon Aurora and Amazon RDS
+                databases, that indicate anomalous behavior.</p>
+        </li><li class="listitem">
+            <p>Unauthorized cryptomining activity in your Amazon Elastic Compute Cloud (Amazon EC2) instances and
+                container workloads.</p>
+        </li><li class="listitem">
+            <p>Presence of malware in your Amazon EC2 instances and container workloads, and newly
+                uploaded files in your Amazon Simple Storage Service (Amazon S3) buckets.</p>
+        </li><li class="listitem">
+            <p>Operating system-level, networking, and file events that indicate unauthorized
+                behavior on your Amazon Elastic Kubernetes Service (Amazon EKS) clusters, Amazon Elastic Container Service (Amazon ECS) - AWS Fargate
+                tasks, and Amazon EC2 instances and container workloads.</p>
+        </li></ul></div><p>The following video provides an overview of how GuardDuty helps you detect threats in your
+        AWS environment.</p><div class="mediaobject">
+         
+            <iframe width="480" height="390" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" sandbox="allow-scripts allow-same-origin allow-popups" src="https://www.youtube-nocookie.com/embed/ng14ToMXnTA"></iframe>
+         
+    </div><div class="highlights"><h6>Contents</h6><ul><li><p><a href="#features-of-guardduty">Features of GuardDuty</a></p></li><li><p><a href="#guardduty-pci-dss-compliance">PCI DSS Compliance</a></p></li><li><p><a href="./guardduty-pricing.html">Pricing in GuardDuty</a></p></li><li><p><a href="./guardduty-access.html">Accessing GuardDuty</a></p></li></ul></div>
+        <h2 id="features-of-guardduty">Features of GuardDuty</h2>
+        <p>Here are some of the key ways in which Amazon GuardDuty can help you monitor, detect, and
+            manage potential threats in your AWS environment.</p>
+        <div class="variablelist">
+             
+            
+             
+             
+             
+             
+        <dl>
+                <dt><span class="term"><b>Continuously monitors specific data sources and event
+                        logs</b></span></dt>
+                <dd>
+                    <div class="itemizedlist">
+                         
+                         
+                         
+                    <ul class="itemizedlist"><li class="listitem">
+                            <p><b>Foundational threat detection</b>
+                                – When you enable GuardDuty in an AWS account, GuardDuty
+                                automatically starts ingesting the foundational data sources
+                                associated with that account. These data sources include AWS CloudTrail
+                                management events, VPC flow logs (from Amazon EC2 instances), and DNS
+                                logs. You don't need to enable anything else for GuardDuty to start
+                                analyzing and processing these data sources to generate associated
+                                security findings. For more information, see <a href="./guardduty_data-sources.html">GuardDuty foundational data sources</a>.</p>
+                        </li><li class="listitem">
+                            <p><b>Extended Threat Detection</b> – This capability
+                                detects multi-stage attacks that span foundational data sources, multiple
+                                types of AWS resources, and time, within an AWS account. 
+                                There might be multiple events in your
+                                    account that, individually, don't present themselves as a clear threat. However,
+                                    when these events are observed in a sequence that is indicative of a suspicious activity, GuardDuty
+                                    identifies it as an attack sequence. GuardDuty notifies you by generating the associated 
+                                    attack sequence finding type to provide details about the observed attack sequence.</p>
+                            <p>With no additional cost associated with it,
+                                Extended Threat Detection is automatically enabled for each AWS account when they enable GuardDuty. This capability
+                            doesn't require you to enable any use-case focused protection plan. However, to increase 
+                            the breadth of security to your Amazon S3 resources, GuardDuty recommends enabling S3 Protection in your account. 
+                            This will help Extended Threat Detection to identify multi-stage attacks that potentially impact your Amazon S3 resources.</p>
+                            <p>For more information about how this capability 
+                                works and what threat scenarios it covers, see <a href="./guardduty-extended-threat-detection.html">GuardDuty Extended Threat Detection</a>.</p>
+                        </li><li class="listitem">
+                            <p><b>Use-case focused GuardDuty protection
+                                    plans</b> – For enhanced threat detection
+                                visibility into the security of your AWS environment, GuardDuty offers
+                                dedicated protection plans that you can choose to enable. Protection
+                                plans help you monitor logs and events from other AWS services.
+                                These sources include EKS audit logs, RDS login activity, Amazon S3 data
+                                events in CloudTrail, EBS volumes, Runtime Monitoring across Amazon EKS,
+                                Amazon EC2, and Amazon ECS-Fargate, and Lambda network activity logs. GuardDuty
+                                consolidates these log and event sources under the term - <a href="https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-features-activation-model.html">Features</a>. You can enable one or more dedicated
+                                protection plans in a supported AWS Region at any time. GuardDuty will
+                                start monitoring, processing, and analyzing the activities based on
+                                which protection plan you enable. For more information about each
+                                protection plan and how it works, see the corresponding protection
+                                plan document.</p>
+                            <div class="table-container"><div class="table-contents"><table id="w528aab5c13b5b1b3b1b5b3"><thead>
+                                        <tr>
+                                            <th>Protection plan</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                        <tr>
+                                            <td tabindex="-1">
+                                                <p><a href="./s3-protection.html">S3 Protection</a></p>
+                                            </td>
+                                            <td tabindex="-1">
+                                                <p>Identifies potential security risks such as
+                                                  data exfiltration and destruction attempts in your
+                                                  Amazon S3 buckets.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td tabindex="-1">
+                                                <p><a href="./kubernetes-protection.html">EKS Protection</a></p>
+                                            </td>
+                                            <td tabindex="-1">
+                                                <p>EKS Audit Log Monitoring analyzes Kubernetes audit logs from
+                                                  your Amazon EKS clusters for potentially suspicious and
+                                                  malicious activities.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td tabindex="-1">
+                                                <p><a href="./runtime-monitoring.html">Runtime Monitoring</a></p>
+                                            </td>
+                                            <td tabindex="-1">
+                                                <p>Monitors and analyzes operating system-level
+                                                  events on your Amazon EKS, Amazon EC2, and Amazon ECS (including
+                                                  AWS Fargate), to detect potential runtime
+                                                  threats.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td tabindex="-1">
+                                                <p><a href="./malware-protection.html">Malware Protection for EC2</a></p>
+                                            </td>
+                                            <td tabindex="-1">
+                                                <p>Detects potential presence of malware by
+                                                  scanning the Amazon EBS volumes associated with your
+                                                  Amazon EC2 instances. There is an option to use this
+                                                  feature on-demand.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td tabindex="-1">
+                                                <p><a href="./gdu-malware-protection-s3.html">Malware Protection for S3</a></p>
+                                            </td>
+                                            <td tabindex="-1">
+                                                <p>Detects potential presence of malware in the
+                                                  newly uploaded objects within your Amazon S3
+                                                  buckets. There is an option to use this feature on-demand.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td tabindex="-1">
+                                                <p><a href="./malware-protection-backup.html">Malware Protection for AWS Backup</a></p>
+                                            </td>
+                                            <td tabindex="-1">
+                                                <p>Detects potential presence of malware by scanning backup resources,
+                                                    including EBS Snapshots, EC2 AMI's, and AWS Backup recovery points.
+                                                    There is an option to use this feature on-demand.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td tabindex="-1">
+                                                <p><a href="./rds-protection.html">RDS Protection</a></p>
+                                            </td>
+                                            <td tabindex="-1">
+                                                <p>Analyzes and profiles your RDS login activity for
+                                                  potential access threats to the supported
+                                                  Amazon Aurora and Amazon RDS databases.</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td tabindex="-1">
+                                                <p><a href="./lambda-protection.html">Lambda Protection</a></p>
+                                            </td>
+                                            <td tabindex="-1">
+                                                <p>Monitors Lambda network activity logs, starting with
+                                                  VPC flow logs, to detect threats to your AWS Lambda
+                                                  functions. Examples of these potential threats
+                                                  include cryptomining and communicating with
+                                                  malicious servers.</p>
+                                            </td>
+                                        </tr>
+                                    </table></div></div>
+                            <div class="awsdocs-note"><div class="awsdocs-note-title"><awsui-icon name="status-info" variant="link"></awsui-icon><h6>Enable Malware Protection for S3 independently</h6></div><div class="awsdocs-note-text"><p>GuardDuty offers flexibility to use Malware Protection for S3 independently,
+                                    without enabling the Amazon GuardDuty service. For more information
+                                    about getting started with only Malware Protection for S3, see <a href="./gdu-malware-protection-s3.html">GuardDuty Malware Protection for S3</a>. To use all
+                                    other protection plans, you must enable the GuardDuty
+                                    service.</p></div></div>
+                        </li></ul></div>
+                </dd>
+             
+                <dt><span class="term"><b>Manage multiple-account environment</b></span></dt>
+                <dd>
+                    <p>You can manage a multiple-account AWS environment by using either
+                        AWS Organizations (recommended) or legacy invitation method. For more information,
+                        see <a href="./guardduty_accounts.html">Multiple accounts in GuardDuty</a>.</p>
+                </dd>
+             
+                <dt><span class="term"><b>Generates security findings for detected
+                        threats</b></span></dt>
+                <dd>
+                    <p>When GuardDuty detects potential security threats associated with your AWS
+                        resources, it starts generating security findings that provide information
+                        about the potentially compromised resource. After you enable GuardDuty in your
+                        account, generate <a href="./sample_findings.html">Sample findings</a> to view the associated <a href="./guardduty_findings-summary.html">Finding details</a>. For a complete list of
+                        security findings, see <a href="./guardduty_finding-types-active.html">GuardDuty finding types</a>.</p>
+                    <p>With GuardDuty, you can also use a tester
+                        script that generates specific GuardDuty security findings to understand how to
+                        review and respond to GuardDuty findings. For more information, see <a href="./guardduty_findings-scripts.html">Test GuardDuty findings in dedicated accounts</a>.</p>
+                </dd>
+             
+                <dt><span class="term"><b>Assessing and managing security
+                    findings</b></span></dt>
+                <dd>
+                    <p>GuardDuty consolidates your security findings across accounts and displays
+                        results in the Summary dashboard on the GuardDuty console. You can also retrieve
+                        findings through the AWS Security Hub CSPM API, AWS Command Line Interface, or AWS SDK. With a holistic
+                        view of your current security status, you can identify trends and potential
+                        issues, and take necessary remediation steps. For more information, see
+                            <a href="./findings_management.html">Managing GuardDuty findings</a>.</p>
+                </dd>
+             
+                <dt><span class="term">
+                    <b>Integrate with related AWS security services</b>
+                </span></dt>
+                <dd>
+                    <p>To further help you analyze and investigate the security trends in your
+                        AWS environment, consider using the following AWS security-related
+                        services in combination with GuardDuty.</p>
+                    <div class="itemizedlist">
+                         
+                         
+                         
+                    <ul class="itemizedlist"><li class="listitem">
+                            <p><b>AWS Security Hub CSPM</b> – This service
+                                gives you a comprehensive view of the security state of your AWS
+                                resources and helps you check your AWS environment against
+                                security industry standards and best practices. It does this partly
+                                by consuming, aggregating, organizing, and prioritizing your
+                                security findings from multiple AWS services (including Amazon Macie)
+                                and supported AWS Partner Network (APN) products. Security Hub CSPM helps you
+                                analyze your security trends and identify the highest priority
+                                security issues across your AWS environment.</p>
+                            <p>For information about using GuardDuty and Security Hub CSPM together, see <a href="./guardduty_integrations.html#gd-securityhub">Integrating GuardDuty with AWS Security Hub CSPM</a>. To
+                                learn more about Security Hub CSPM, see the <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html">AWS Security Hub User Guide</a>.</p>
+                        </li><li class="listitem">
+                            <p><b>Amazon Detective</b> – This service
+                                helps you analyze, investigate, and quickly identify the root cause
+                                of security findings or suspicious activities. Detective automatically
+                                collects log data from your AWS resources. It then uses machine
+                                learning, statistical analysis, and graph theory to generate
+                                visualizations that help you to conduct faster and more efficient
+                                security investigations. The Detective prebuilt data aggregations,
+                                summaries, and context help you analyze and determine the nature and
+                                extent of potential security issues.</p>
+                            <p>For information about using GuardDuty and Detective together, see <a href="./guardduty_integrations.html#gd-detective">Integrating GuardDuty with Amazon Detective</a>. To learn
+                                more about Detective, see the <a href="https://docs.aws.amazon.com/detective/latest/userguide/what-is-detective.html">Amazon Detective User Guide</a>.</p>
+                        </li><li class="listitem">
+                            <p><b>Amazon EventBridge</b> – This service
+                                helps you receive notifications and respond to GuardDuty security
+                                findings in near-real time. GuardDuty creates an event when there is a
+                                change in the findings. You can choose how frequently you want to
+                                receive the notifications from EventBridge. For more information, see
+                                    <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html">What is
+                                    Amazon EventBridge</a> in the
+                                <em>Amazon EventBridge User Guide</em>.</p>
+                        </li></ul></div>
+                </dd>
+            </dl></div>
+        
+     
+        <h2 id="guardduty-pci-dss-compliance">PCI DSS Compliance</h2>
+        
+<p>GuardDuty supports the processing, storage, and transmission 
+of credit card data by a merchant or service provider, and has been 
+validated as being compliant with Payment Card Industry (PCI) Data Security Standard (DSS). 
+For more information about PCI DSS, including how to request a copy of the AWS PCI Compliance Package, 
+see <a href="https://aws.amazon.com/compliance/pci-dss-level-1-faqs/" rel="noopener noreferrer" target="_blank"><span>PCI DSS Level 1</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a>.
+</p>
+
+        <p>For more information, see <a href="https://aws.amazon.com/blogs/security/new-third-party-test-compares-amazon-guardduty-to-network-intrusion-detection-systems/" rel="noopener noreferrer" target="_blank"><span>New third-party test compares Amazon GuardDuty to network intrusion detection
+                systems</span><awsui-icon class="awsdocs-link-icon" name="external"></awsui-icon></a> in the <em>AWS Security Blog</em>.</p>
+    <awsdocs-copyright class="copyright-print"></awsdocs-copyright><awsdocs-thumb-feedback right-edge="{{$ctrl.thumbFeedbackRightEdge}}"></awsdocs-thumb-feedback></div><noscript><div><div><div><div id="js_error_message"><p><img src="https://d1ge0kk1l5kms0.cloudfront.net/images/G/01/webservices/console/warning.png" alt="Warning" /> <strong>Javascript is disabled or is unavailable in your browser.</strong></p><p>To use the Amazon Web Services Documentation, Javascript must be enabled. Please refer to your browser's Help pages for instructions.</p></div></div></div></div></noscript><div id="main-col-footer" class="awsui-util-font-size-0"><div id="doc-conventions"><a target="_top" href="/general/latest/gr/docconventions.html">Document Conventions</a></div><div class="prev-next"><div id="next" class="next-link" accesskey="n" href="./guardduty-pricing.html">Pricing in GuardDuty</div></div></div><awsdocs-page-utilities></awsdocs-page-utilities></div><div id="quick-feedback-yes" style="display: none;"><div class="title">Did this page help you? - Yes</div><div class="content"><p>Thanks for letting us know we're doing a good job!</p><p>If you've got a moment, please tell us what we did right so we can do more of it.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=GuardDuty&amp;topic_url=https://docs.aws.amazon.com/en_us/guardduty/latest/ug/what-is-guardduty.html"></awsui-button></p></div></div><div id="quick-feedback-no" style="display: none;"><div class="title">Did this page help you? - No</div><div class="content"><p>Thanks for letting us know this page needs work. We're sorry we let you down.</p><p>If you've got a moment, please tell us how we can make the documentation better.</p><p><awsui-button id="fblink" rel="noopener noreferrer" target="_blank" text="Feedback" click="linkClick($event)" href="https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=GuardDuty&amp;topic_url=https://docs.aws.amazon.com/en_us/guardduty/latest/ug/what-is-guardduty.html"></awsui-button></p></div></div></div></body></div></awsdocs-view><div class="page-loading-indicator" id="page-loading-indicator"><awsui-spinner size="large"></awsui-spinner></div></div><div id="tools-panel" dom-region="tools"><awsdocs-tools-panel id="awsdocs-tools-panel"></awsdocs-tools-panel></div></awsui-app-layout><awsdocs-cookie-banner class="doc-cookie-banner"></awsdocs-cookie-banner></div></body></html>
